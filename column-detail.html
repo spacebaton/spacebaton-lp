@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>レンタルスペース事業をM&Aで売却するメリットと相場感｜SpaceBatonコラム</title>
+  <meta name="description" content="「スペースを売りたいけど相場がわからない」「M&Aって大企業向けでは？」そんな疑問にお答えします。小規模スペース事業でもM&Aは現実的な選択肢です。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* PAGE HERO */
+    .page-hero{background:linear-gradient(120deg,#061b3d 0%,#0a3a8a 100%);padding:44px 0 36px;color:#fff}
+    .breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;margin-bottom:14px;color:rgba(255,255,255,.55);flex-wrap:wrap}
+    .breadcrumb a{color:rgba(255,255,255,.7)}
+    .breadcrumb a:hover{color:#fff}
+    .article-hero-cat{display:inline-block;background:var(--blue);color:#fff;border-radius:999px;padding:5px 14px;font-size:12px;font-weight:900;margin-bottom:16px}
+    .page-hero h1{font-size:28px;font-weight:900;margin:0 0 16px;line-height:1.5;letter-spacing:-.02em}
+    .article-hero-meta{display:flex;align-items:center;gap:16px;font-size:13px;font-weight:700;color:rgba(255,255,255,.65)}
+    .article-hero-meta span{display:flex;align-items:center;gap:4px}
+
+    /* LAYOUT */
+    .article-main{padding:48px 0 64px}
+    .article-layout{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start}
+
+    /* ARTICLE CONTENT */
+    .article-content{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 4px 16px rgba(11,47,104,.06)}
+    .article-eyecatch{height:340px;background-size:cover;background-position:center}
+    .article-body{padding:36px}
+    .article-body h2{font-size:20px;font-weight:900;color:var(--text);margin:32px 0 14px;padding-left:14px;border-left:4px solid var(--blue);line-height:1.5}
+    .article-body h3{font-size:16px;font-weight:900;color:var(--text);margin:24px 0 10px}
+    .article-body p{font-size:14px;line-height:1.9;color:#3a4a62;margin:0 0 16px;font-weight:500}
+    .article-body ul,.article-body ol{padding-left:24px;margin:0 0 16px}
+    .article-body li{font-size:14px;line-height:1.9;color:#3a4a62;font-weight:500;margin-bottom:6px}
+    .article-body strong{font-weight:900;color:var(--text)}
+    .article-body a{color:var(--blue);font-weight:700}
+    .article-body a:hover{text-decoration:underline}
+
+    /* CALLOUT BOX */
+    .callout{background:#f0f6ff;border:1px solid #c8daf8;border-radius:12px;padding:20px 22px;margin:20px 0}
+    .callout-title{font-size:13px;font-weight:900;color:var(--blue);margin:0 0 8px}
+    .callout p{margin:0;font-size:13px}
+
+    /* SUMMARY TABLE */
+    .summary-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:13px}
+    .summary-table th{background:#eef4ff;color:var(--text);font-weight:900;padding:10px 14px;text-align:left;border:1px solid var(--line)}
+    .summary-table td{padding:10px 14px;border:1px solid var(--line);font-weight:700;color:#3a4a62}
+    .summary-table tr:nth-child(even) td{background:#fafcff}
+
+    /* ARTICLE TAGS */
+    .article-tags{display:flex;gap:8px;flex-wrap:wrap;padding:24px 36px;border-top:1px solid var(--line)}
+    .tag{background:#eef4ff;color:var(--blue);border-radius:999px;padding:5px 12px;font-size:12px;font-weight:900}
+
+    /* AUTHOR BOX */
+    .author-box{background:#f8fafe;border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:0 36px 36px;display:flex;gap:16px;align-items:center}
+    .author-avatar{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#0b58ce,#002b7a);display:grid;place-items:center;color:#fff;font-size:20px;font-weight:900;flex-shrink:0}
+    .author-info strong{display:block;font-size:14px;font-weight:900;color:var(--text);margin-bottom:4px}
+    .author-info p{font-size:12px;color:var(--muted);line-height:1.7;margin:0;font-weight:700}
+
+    /* SIDEBAR */
+    .sidebar{display:flex;flex-direction:column;gap:20px;position:sticky;top:94px}
+
+    /* SIDEBAR CTA */
+    .sidebar-cta{background:var(--blue);border-radius:14px;padding:24px;color:#fff;text-align:center}
+    .sidebar-cta p{font-size:13px;font-weight:700;color:rgba(255,255,255,.8);margin:0 0 14px;line-height:1.7}
+    .sidebar-cta h3{font-size:17px;font-weight:900;margin:0 0 16px}
+    .sidebar-cta a{display:block;background:#fff;color:var(--blue);border-radius:8px;padding:13px;font-weight:900;font-size:14px}
+    .sidebar-cta a:hover{opacity:.9}
+
+    /* RELATED ARTICLES */
+    .sidebar-related{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+    .sidebar-related-title{padding:16px 18px;font-size:13px;font-weight:900;color:var(--text);border-bottom:1px solid var(--line)}
+    .related-item{display:flex;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line);text-decoration:none;transition:background .2s}
+    .related-item:last-child{border-bottom:none}
+    .related-item:hover{background:#f5f8ff}
+    .related-thumb{width:64px;height:52px;border-radius:6px;background-size:cover;background-position:center;flex-shrink:0}
+    .related-text{flex:1}
+    .related-cat{font-size:10px;font-weight:900;color:var(--blue);margin-bottom:4px}
+    .related-title{font-size:12px;font-weight:900;color:var(--text);line-height:1.5}
+    .related-date{font-size:11px;color:var(--muted);font-weight:700;margin-top:4px}
+
+    /* POPULAR TAGS SIDEBAR */
+    .sidebar-tags{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+    .sidebar-tags-title{font-size:13px;font-weight:900;color:var(--text);margin:0 0 12px}
+    .sidebar-tags-list{display:flex;flex-wrap:wrap;gap:6px}
+    .sidebar-tag{background:#f0f6ff;color:var(--blue);border-radius:999px;padding:5px 11px;font-size:12px;font-weight:900;text-decoration:none;transition:all .2s}
+    .sidebar-tag:hover{background:var(--blue);color:#fff}
+
+    /* PREV/NEXT NAV */
+    .article-nav{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+    .article-nav a{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;transition:all .2s}
+    .article-nav a:hover{border-color:var(--blue);box-shadow:0 4px 14px rgba(11,47,104,.1)}
+    .article-nav .nav-label{font-size:11px;font-weight:900;color:var(--muted);display:block;margin-bottom:6px}
+    .article-nav .nav-title{font-size:13px;font-weight:900;color:var(--text);line-height:1.5}
+    .article-nav .nav-prev{text-align:left}
+    .article-nav .nav-next{text-align:right}
+
+    /* BACK TO LIST */
+    .back-to-list{text-align:center;margin-top:24px}
+    .back-to-list a{display:inline-flex;align-items:center;gap:6px;color:var(--blue);font-weight:900;font-size:14px;border:1.5px solid var(--blue);border-radius:999px;padding:10px 22px;transition:all .2s}
+    .back-to-list a:hover{background:var(--blue);color:#fff}
+
+    /* BOTTOM CTA */
+    .column-cta{background:var(--light);border-radius:16px;padding:36px;text-align:center;border:1px solid var(--line);margin-top:40px}
+    .column-cta h2{font-size:22px;font-weight:900;margin:0 0 8px;color:var(--text)}
+    .column-cta p{font-size:14px;color:var(--muted);font-weight:700;margin:0 0 20px}
+
+    @media(max-width:900px){
+      .article-layout{grid-template-columns:1fr}
+      .sidebar{position:static}
+      .page-hero h1{font-size:20px}
+      .article-nav{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark"></span>
+        <span><strong>SpaceBaton</strong><small>あなたのスペース、次のオーナーへ。</small></span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#features">サービスの特徴</a>
+        <a href="listings.html">案件一覧</a>
+        <a href="index.html#flow">ご利用の流れ</a>
+        <a href="index.html#target">対象スペース</a>
+        <a href="column.html" style="color:var(--blue)">コラム</a>
+        <a href="index.html#faq">よくある質問</a>
+      </nav>
+      <a class="header-cta" href="https://forms.gle/aX9PdKuNrqxqLmRT8" target="_blank" rel="noopener">気軽に相談する</a>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">ホーム</a><span>›</span><a href="column.html">コラム</a><span>›</span><span style="color:#fff">レンタルスペース事業をM&Aで売却するメリットと相場感</span>
+      </nav>
+      <span class="article-hero-cat">売却ノウハウ</span>
+      <h1>レンタルスペース事業をM&Aで売却する<br>メリットと相場感</h1>
+      <div class="article-hero-meta">
+        <span>📅 2025年4月15日</span>
+        <span>✍ VMK Inc. 編集部</span>
+        <span>⏱ 読了約5分</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="article-main">
+    <div class="container">
+      <div class="article-layout">
+
+        <!-- MAIN ARTICLE -->
+        <div>
+          <article class="article-content">
+            <div class="article-eyecatch room-a"></div>
+            <div class="article-body">
+
+              <p>「スペースを売りたいけど、相場がわからない」「M&Aって大企業向けでは？」——そんな疑問をお持ちのスペース運営者の方は多いのではないでしょうか。</p>
+
+              <p>実際には、月商10万円台の小規模なレンタルスペースでも、M&Aによる売却は十分に現実的な選択肢です。この記事では、スペース事業のM&A売却のメリットと、実際の価格相場について解説します。</p>
+
+              <div class="callout">
+                <p class="callout-title">📌 この記事でわかること</p>
+                <p>スペース事業のM&A売却の3つのメリット／売却価格の算出方法と相場感／売却時に準備すべき書類と注意点</p>
+              </div>
+
+              <h2>なぜ今、スペース事業のM&Aが増えているのか</h2>
+              <p>コロナ禍以降、レンタルスペースや民泊を始めた個人オーナーが急増しました。一方で、運営の手間・収益の伸び悩み・物件の老朽化などを理由に「そろそろ手放したい」と考える方も増えています。</p>
+              <p>同時に買い手側では、「スペース事業を始めたいが、ゼロから立ち上げるリスクを避けたい」というニーズが高まっています。<strong>既存の予約実績・設備・運営ノウハウをまとめて引き継げるM&Aは、双方にとってメリットが大きい取引</strong>と言えます。</p>
+
+              <h2>スペース事業を売却する3つのメリット</h2>
+
+              <h3>① まとまった資金を一度に回収できる</h3>
+              <p>スペース事業を継続運営した場合、毎月の収益は少額です。しかし売却すれば、将来の収益を「今」まとめて受け取れます。例えば月商35万円・純利益15万円のスペースであれば、<strong>200〜400万円程度</strong>で売却できるケースが多く、現金化できるまでの時間を大幅に短縮できます。</p>
+
+              <h3>② 事業清算より高く手放せる</h3>
+              <p>廃業する場合、設備や什器は二束三文にしかなりません。しかしM&Aであれば、「稼働中の事業」としての価値が乗るため、同じ資産でもより高い価格での売却が期待できます。特に予約実績・口コミ・リピーターなど<strong>無形の価値</strong>もきちんと評価されます。</p>
+
+              <h3>③ 買い手が引き継ぐので運営を続けられる</h3>
+              <p>愛着のある物件を単純に閉業するのは惜しいと感じる方も多いでしょう。M&Aなら買い手がそのまま運営を引き継ぐため、スペース自体は存続します。常連のお客様への影響も最小限に抑えられます。</p>
+
+              <h2>スペース事業の売却価格はどう決まるか</h2>
+              <p>スペース事業のM&Aで最もよく使われる評価方法が<strong>「年間純利益 × 倍率（マルチプル）」</strong>です。</p>
+
+              <table class="summary-table">
+                <tr>
+                  <th>評価項目</th>
+                  <th>内容</th>
+                  <th>目安</th>
+                </tr>
+                <tr>
+                  <td>月間純利益</td>
+                  <td>売上から家賃・光熱費・プラットフォーム手数料等を引いた利益</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>年間純利益</td>
+                  <td>月間純利益 × 12</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>倍率（マルチプル）</td>
+                  <td>スペース事業の場合、一般的に1〜3倍</td>
+                  <td>平均1.5〜2倍</td>
+                </tr>
+                <tr>
+                  <td><strong>売却価格の目安</strong></td>
+                  <td>年間純利益 × マルチプル（＋設備・保証金など）</td>
+                  <td>—</td>
+                </tr>
+              </table>
+
+              <div class="callout">
+                <p class="callout-title">💡 計算例</p>
+                <p>月商35万円、月間コスト20万円（家賃12万＋光熱費4万＋手数料4万）の場合<br>
+                月間純利益：15万円 → 年間純利益：180万円<br>
+                マルチプル2倍で計算すると → <strong>売却価格の目安：360万円</strong>（＋設備・保証金）</p>
+              </div>
+
+              <h3>価格に影響する主な要素</h3>
+              <ul>
+                <li><strong>立地の良さ</strong>：駅近・繁華街近接は評価が高い</li>
+                <li><strong>稼働率</strong>：70%超えると評価がアップしやすい</li>
+                <li><strong>予約経路の分散</strong>：スペースマーケット・インスタ・リピーターなど複数あると安心</li>
+                <li><strong>設備の状態</strong>：空調・音響・映像機器など整備済みは加点</li>
+                <li><strong>オーナー依存度</strong>：運営が仕組み化されているほど高評価</li>
+                <li><strong>残存契約期間</strong>：賃貸契約の残年数が長いほどよい</li>
+              </ul>
+
+              <h2>売却に必要な主な書類</h2>
+              <p>実際にM&Aを進める際には、以下の書類を用意しておくとスムーズです。</p>
+              <ul>
+                <li>直近12ヶ月の月次売上データ（プラットフォーム管理画面のCSV等）</li>
+                <li>賃貸借契約書（物件の賃貸借条件の確認）</li>
+                <li>各種プラットフォームのアカウント情報</li>
+                <li>設備リスト（エアコン・音響・映像機器等）</li>
+                <li>月次経費の内訳（光熱費・消耗品費等）</li>
+              </ul>
+
+              <h2>まとめ</h2>
+              <p>スペース事業のM&Aは、大企業だけの話ではありません。月商10万円台の小規模スペースでも、適切な価格で買い手を見つけることは十分可能です。</p>
+              <p>大切なのは、<strong>正確な収益データ</strong>と<strong>わかりやすい運営情報</strong>を整理しておくこと。これがあるだけで、交渉がスムーズに進みます。</p>
+              <p>SpaceBatonでは、スペース運営の現場を知る私たちが売却・買収の両面からサポートします。まずはお気軽にご相談ください。</p>
+
+            </div>
+
+            <!-- TAGS -->
+            <div class="article-tags">
+              <span class="tag">売却ノウハウ</span>
+              <span class="tag">レンタルスペース</span>
+              <span class="tag">M&A</span>
+              <span class="tag">相場</span>
+              <span class="tag">スペース売却</span>
+            </div>
+
+            <!-- AUTHOR -->
+            <div class="author-box">
+              <div class="author-avatar">V</div>
+              <div class="author-info">
+                <strong>VMK Inc. 編集部</strong>
+                <p>名古屋を拠点にレンタルスペースの運営・M&A仲介を手がけるVMK Inc.の編集チームです。売り手・買い手として実際にスペースのM&Aを経験した知見をもとに、実践的な情報をお届けします。</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- PREV / NEXT NAV -->
+          <div class="article-nav">
+            <a href="column.html" class="nav-prev">
+              <span class="nav-label">← 前の記事</span>
+              <span class="nav-title">コラム一覧へ戻る</span>
+            </a>
+            <a href="column-detail.html" class="nav-next">
+              <span class="nav-label">次の記事 →</span>
+              <span class="nav-title">はじめてのスペース買収 — 失敗しない物件選びの5つのポイント</span>
+            </a>
+          </div>
+
+          <div class="back-to-list">
+            <a href="column.html">← コラム一覧に戻る</a>
+          </div>
+
+          <!-- BOTTOM CTA -->
+          <div class="column-cta">
+            <h2>売却・買収のご相談はお気軽に</h2>
+            <p>記事を読んで気になったこと、ご自身の状況に合わせたアドバイスをご希望の方はご連絡ください。</p>
+            <a href="https://forms.gle/aX9PdKuNrqxqLmRT8" class="header-cta" target="_blank" rel="noopener" style="display:inline-block">気軽に相談する</a>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+          <!-- CTA -->
+          <div class="sidebar-cta">
+            <h3>無料相談受付中</h3>
+            <p>売却・買収どちらもお気軽に。スペース運営の経験者が対応します。</p>
+            <a href="https://forms.gle/aX9PdKuNrqxqLmRT8" target="_blank" rel="noopener">気軽に相談する →</a>
+          </div>
+
+          <!-- RELATED -->
+          <div class="sidebar-related">
+            <p class="sidebar-related-title">関連記事</p>
+            <a href="column-detail.html" class="related-item">
+              <div class="related-thumb room-d"></div>
+              <div class="related-text">
+                <p class="related-cat">買収ガイド</p>
+                <p class="related-title">はじめてのスペース買収 — 失敗しない物件選びの5つのポイント</p>
+                <p class="related-date">2025年4月8日</p>
+              </div>
+            </a>
+            <a href="column-detail.html" class="related-item">
+              <div class="related-thumb room-b"></div>
+              <div class="related-text">
+                <p class="related-cat">市場情報</p>
+                <p class="related-title">民泊・簡易宿所の売買で知っておくべきこと</p>
+                <p class="related-date">2025年3月25日</p>
+              </div>
+            </a>
+            <a href="column-detail.html" class="related-item">
+              <div class="related-thumb room-c"></div>
+              <div class="related-text">
+                <p class="related-cat">事例紹介</p>
+                <p class="related-title">スペースM&A体験談：音楽スタジオを3ヶ月で売却できた理由</p>
+                <p class="related-date">2025年3月12日</p>
+              </div>
+            </a>
+            <a href="column-detail.html" class="related-item">
+              <div class="related-thumb room-d"></div>
+              <div class="related-text">
+                <p class="related-cat">売却ノウハウ</p>
+                <p class="related-title">貸し会議室の売却価格と利回りの考え方</p>
+                <p class="related-date">2025年2月28日</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- TAGS -->
+          <div class="sidebar-tags">
+            <p class="sidebar-tags-title">タグ</p>
+            <div class="sidebar-tags-list">
+              <a href="column.html" class="sidebar-tag">売却ノウハウ</a>
+              <a href="column.html" class="sidebar-tag">買収ガイド</a>
+              <a href="column.html" class="sidebar-tag">市場情報</a>
+              <a href="column.html" class="sidebar-tag">事例紹介</a>
+              <a href="column.html" class="sidebar-tag">レンタルスペース</a>
+              <a href="column.html" class="sidebar-tag">民泊</a>
+              <a href="column.html" class="sidebar-tag">スタジオ</a>
+              <a href="column.html" class="sidebar-tag">貸し会議室</a>
+              <a href="column.html" class="sidebar-tag">M&A</a>
+              <a href="column.html" class="sidebar-tag">相場</a>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="logo light" href="index.html"><span class="logo-mark"></span><span><strong>SpaceBaton</strong><small>あなたのスペース、次のオーナーへ。</small></span></a>
+        <nav class="footer-nav">
+          <a href="index.html#features">サービスの特徴</a>
+          <a href="listings.html">案件一覧</a>
+          <a href="index.html#flow">ご利用の流れ</a>
+          <a href="index.html#target">対象スペース</a>
+          <a href="column.html">コラム</a>
+          <a href="index.html#faq">よくある質問</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p><strong style="color:#fff">VMK Inc.</strong>　〒460-0022 愛知県名古屋市中区金山1丁目14-16 トキワビル5階</p>
+        <small class="copy">© VMK Inc.</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

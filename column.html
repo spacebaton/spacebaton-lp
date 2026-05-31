@@ -50,7 +50,25 @@
     .column-cta h2{font-size:22px;font-weight:900;margin:0 0 8px;color:var(--text)}
     .column-cta p{font-size:14px;color:var(--muted);font-weight:700;margin:0 0 20px}
 
-    @media(max-width:900px){.featured-article{grid-template-columns:1fr}.articles-grid{grid-template-columns:1fr}}
+    @media(max-width:900px){
+      .page-hero h1{font-size:27px}
+      .page-hero p{font-size:12.5px}
+      .column-main{padding:28px 0 48px}
+      .featured-article{grid-template-columns:1fr;margin-bottom:32px}
+      .featured-img{min-height:0;height:170px}
+      .featured-body{padding:22px 20px}
+      .featured-body h2{font-size:18px;line-height:1.45}
+      .featured-body p{font-size:12.5px}
+      .cat-tabs{margin-bottom:22px;gap:7px}
+      .cat-tab{padding:7px 14px;font-size:12px}
+      .articles-grid{grid-template-columns:1fr;gap:16px;margin-bottom:36px}
+      .article-img{height:150px}
+      .article-body{padding:16px}
+      .article-body h3{font-size:15px}
+      .column-cta{padding:28px 20px}
+      .column-cta h2{font-size:19px}
+      .column-cta p{font-size:13px}
+    }
   </style>
 </head>
 <body>
@@ -60,7 +78,7 @@
         <span class="logo-mark"></span>
         <span><strong>SpaceBaton</strong><small>あなたのスペース、次のオーナーへ。</small></span>
       </a>
-      <nav class="nav">
+      <nav class="nav" id="primaryNav">
         <a href="index.html#features">サービスの特徴</a>
         <a href="listings.html">案件一覧</a>
         <a href="index.html#flow">ご利用の流れ</a>
@@ -68,7 +86,10 @@
         <a href="column.html" style="color:var(--blue)">コラム</a>
         <a href="index.html#faq">よくある質問</a>
       </nav>
-      <a class="header-cta" href="https://forms.gle/aX9PdKuNrqxqLmRT8" target="_blank" rel="noopener">気軽に相談する</a>
+      <div class="header-actions">
+        <a class="header-cta" href="https://forms.gle/aX9PdKuNrqxqLmRT8" target="_blank" rel="noopener">気軽に相談する</a>
+        <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
@@ -207,6 +228,7 @@
   </footer>
 
   <script>
+    (function(){var t=document.getElementById('navToggle'),n=document.getElementById('primaryNav');if(t&&n){t.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');t.setAttribute('aria-expanded',o?'true':'false');});n.addEventListener('click',function(e){if(e.target.tagName==='A'){document.body.classList.remove('nav-open');t.setAttribute('aria-expanded','false');}});}})();
     document.querySelectorAll('.cat-tab').forEach(tab => {
       tab.addEventListener('click', () => {
         document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));

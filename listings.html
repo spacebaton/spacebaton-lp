@@ -42,7 +42,23 @@
     .pl-kuro{background:#e6f4ee;color:#0a6e3f}
     .pl-aka{background:#fdecea;color:#c0392a}
     .card-location{font-size:12px;color:var(--muted);font-weight:700;margin:4px 0 0}
-    @media(max-width:900px){.listings-grid{grid-template-columns:1fr}.filter-inner{flex-direction:column;align-items:stretch}.nonpublic-banner{flex-direction:column;text-align:center}}
+    .filter-toggle{display:none}
+    @media(max-width:900px){
+      .listings-grid{grid-template-columns:1fr}
+      .nonpublic-banner{flex-direction:column;text-align:center}
+      .page-hero h1{font-size:27px}
+      .page-hero p{font-size:12.5px}
+      /* 絞り込み：非sticky＋トグル開閉 */
+      .filter-wrap{position:static;padding:12px 0}
+      .filter-label{display:none}
+      .filter-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;background:#fff;border:1.5px solid #dfe8f6;border-radius:10px;padding:13px 16px;font-family:'Noto Sans JP',sans-serif;font-size:14px;font-weight:900;color:var(--text);cursor:pointer}
+      .filter-toggle .ft-icon{font-size:18px;color:var(--blue);transition:transform .25s}
+      .filter-toggle[aria-expanded="true"] .ft-icon{transform:rotate(45deg)}
+      .filter-inner{flex-direction:column;align-items:stretch;gap:10px;max-height:0;overflow:hidden;opacity:0;transition:max-height .3s ease,opacity .25s ease,margin .3s ease;margin-top:0}
+      .filter-inner.open{max-height:520px;opacity:1;margin-top:12px}
+      .filter-select{min-width:0;width:100%}
+      .results-bar{flex-wrap:wrap;gap:10px}
+    }
   </style>
 </head>
 <body>
@@ -52,7 +68,7 @@
         <span class="logo-mark"></span>
         <span><strong>SpaceBaton</strong><small>あなたのスペース、次のオーナーへ。</small></span>
       </a>
-      <nav class="nav">
+      <nav class="nav" id="primaryNav">
         <a href="index.html#features">サービスの特徴</a>
         <a href="listings.html" style="color:var(--blue)">案件一覧</a>
         <a href="index.html#flow">ご利用の流れ</a>
@@ -60,7 +76,10 @@
         <a href="column.html">コラム</a>
         <a href="index.html#faq">よくある質問</a>
       </nav>
-      <a class="header-cta" href="https://forms.gle/aX9PdKuNrqxqLmRT8" target="_blank" rel="noopener">気軽に相談する</a>
+      <div class="header-actions">
+        <a class="header-cta" href="https://forms.gle/aX9PdKuNrqxqLmRT8" target="_blank" rel="noopener">気軽に相談する</a>
+        <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
@@ -76,7 +95,8 @@
 
   <div class="filter-wrap">
     <div class="container">
-      <div class="filter-inner">
+      <button class="filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="filterInner">絞り込み <span class="ft-icon">＋</span></button>
+      <div class="filter-inner" id="filterInner">
         <span class="filter-label">絞り込み：</span>
         <select class="filter-select">
           <option value="">業態：すべて</option>
@@ -187,5 +207,10 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function(){var t=document.getElementById('navToggle'),n=document.getElementById('primaryNav');if(t&&n){t.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');t.setAttribute('aria-expanded',o?'true':'false');});n.addEventListener('click',function(e){if(e.target.tagName==='A'){document.body.classList.remove('nav-open');t.setAttribute('aria-expanded','false');}});}})();
+    (function(){var b=document.getElementById('filterToggle'),f=document.getElementById('filterInner');if(b&&f){b.addEventListener('click',function(){var o=f.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.querySelector('.ft-icon').textContent=o?'－':'＋';});}})();
+  </script>
 </body>
 </html>

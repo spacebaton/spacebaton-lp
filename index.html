@@ -3,7 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SpaceBaton｜特化のM&A仲介サービス</title>
+  <title>SpaceBaton（スペースバトン）｜レンタルスペース・民泊・貸し会議室特化のM&A仲介</title>
+  <meta name="description" content="レンタルスペース・民泊・貸し会議室・レンタルスタジオに特化したスモールM&A仲介。完全成功報酬・登録無料で売り手のリスクゼロ。撤退で損する代わりに、あなたのスペースを次のオーナーへ。運営：VMK Inc.（名古屋）" />
+  <link rel="canonical" href="https://spacebaton-lp.vercel.app/" />
+  <meta name="robots" content="index, follow" />
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SpaceBaton（スペースバトン）" />
+  <meta property="og:title" content="SpaceBaton｜レンタルスペース特化のM&A仲介サービス" />
+  <meta property="og:description" content="大手が扱わないスモールスペース専門のM&A。完全成功報酬・登録無料で売り手のリスクゼロ。あなたのスペース、次のオーナーへ。" />
+  <meta property="og:url" content="https://spacebaton-lp.vercel.app/" />
+  <meta property="og:image" content="https://spacebaton-lp.vercel.app/vmk-logo.jpg" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SpaceBaton｜レンタルスペース特化のM&A仲介サービス" />
+  <meta name="twitter:description" content="大手が扱わないスモールスペース専門のM&A。完全成功報酬・登録無料。あなたのスペース、次のオーナーへ。" />
+  <meta name="twitter:image" content="https://spacebaton-lp.vercel.app/vmk-logo.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23084cb4'/%3E%3Ctext x='16' y='22' font-size='18' font-weight='900' text-anchor='middle' fill='white' font-family='Arial'%3ESB%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -96,15 +112,40 @@
     .faq-item[open] .faq-q{border-bottom:1px solid var(--line);color:var(--blue)}
     .faq-a{padding:16px 22px;font-size:13px;line-height:1.9;color:#3a4a62;font-weight:500}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "SpaceBaton（スペースバトン）",
+    "description": "レンタルスペース・民泊・貸し会議室・レンタルスタジオに特化したスモールM&A仲介サービス。完全成功報酬・登録無料。",
+    "url": "https://spacebaton-lp.vercel.app/",
+    "image": "https://spacebaton-lp.vercel.app/vmk-logo.jpg",
+    "slogan": "あなたのスペース、次のオーナーへ。",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "VMK Inc."
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "460-0022",
+      "addressRegion": "愛知県",
+      "addressLocality": "名古屋市中区",
+      "streetAddress": "金山1丁目14-16 トキワビル5階",
+      "addressCountry": "JP"
+    },
+    "areaServed": ["東海", "関東", "日本"],
+    "priceRange": "成功報酬10%（最低10万円）"
+  }
+  </script>
 </head>
 <body>
   <header class="header">
     <div class="container header-inner">
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <span class="logo-mark"></span>
         <span><strong>SpaceBaton</strong><small>あなたのスペース、次のオーナーへ。</small></span>
       </a>
-      <nav class="nav">
+      <nav class="nav" id="primaryNav">
         <a href="#features">サービスの特徴</a>
         <a href="listings.html">案件一覧</a>
         <a href="#flow">ご利用の流れ</a>
@@ -112,7 +153,12 @@
         <a href="column.html">コラム</a>
         <a href="#faq">よくある質問</a>
       </nav>
-      <a class="header-cta" href="https://forms.gle/aX9PdKuNrqxqLmRT8" target="_blank" rel="noopener">気軽に相談する</a>
+      <div class="header-actions">
+        <a class="header-cta" href="https://forms.gle/aX9PdKuNrqxqLmRT8" target="_blank" rel="noopener" data-cta="header">気軽に相談する</a>
+        <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="primaryNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -121,13 +167,13 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">レンタルスペース・民泊・貸し会議室・レンタルスタジオ</p>
-          <p class="blue-label">特化のM&A仲介サービス</p>
+          <p class="blue-label">に特化したスモールM&A仲介</p>
           <h1>SpaceBaton<span>スペースバトン</span></h1>
           <p class="tagline">あなたのスペース、<br>次のオーナーへ。</p>
           <div class="merits">
-            <div><span>⌂</span><strong>完全成功報酬制</strong><small>登録・相談無料</small></div>
-            <div><span>✎</span><strong>売り手・買い手</strong><small>各10%（最低10万円）</small></div>
-            <div><span>◎</span><strong>運営実績のある</strong><small>プロがサポート</small></div>
+            <div><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 8l3 4 3-4M12 12v5M9.5 14h5M9.5 16.5h5"/></svg></span><strong>完全成功報酬制</strong><small>登録・相談無料</small></div>
+            <div><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 19v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1"/><circle cx="9" cy="7" r="3"/><path d="M22 19v-1a4 4 0 0 0-3-3.87"/><path d="M16 4.13a4 4 0 0 1 0 7.75"/></svg></span><strong>売り手・買い手</strong><small>各10%（最低10万円）</small></div>
+            <div><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 1.7 2.9-.3 1 2.8 2.5 1.5-1 2.8 1 2.8-2.5 1.5-1 2.8-2.9-.3L12 22l-2.4-1.7-2.9.3-1-2.8L3.2 14l1-2.8-1-2.8 2.5-1.5 1-2.8 2.9.3z"/><path d="M9 12l2 2 4-4"/></svg></span><strong>運営実績のある</strong><small>プロがサポート</small></div>
           </div>
         </div>
         <div class="hero-photos" aria-label="スペース写真">
@@ -153,8 +199,19 @@
         <div class="features">
           <article><i>¥</i><h3>完全成功報酬制</h3><p>売り手・買い手ともに手数料は成功時のみ。登録・相談は無料です。</p></article>
           <article><i>10%</i><h3>明確な料金体系</h3><p>売り手・買い手各10%（最低10万円）の安心価格。</p></article>
-          <article><i>🤝</i><h3>スペース特化の専門性</h3><p>実績ある運営者だからできる的確なマッチングをサポート。</p></article>
-          <article><i>✓</i><h3>安心・安全の取引</h3><p>秘密保持を徹底し、安心してご利用いただけるようサポートします。</p></article>
+          <article><i class="ic-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 19v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1"/><circle cx="9" cy="7" r="3"/><path d="M22 19v-1a4 4 0 0 0-3-3.87"/><path d="M16 4.13a4 4 0 0 1 0 7.75"/></svg></i><h3>スペース特化の専門性</h3><p>実績ある運営者だからできる的確なマッチングをサポート。</p></article>
+          <article><i class="ic-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 3v6c0 4.4-3 8-7 9-4-1-7-4.6-7-9V5z"/><path d="M9 12l2 2 4-4"/></svg></i><h3>安心・安全の取引</h3><p>秘密保持を徹底し、安心してご利用いただけるようサポートします。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band">
+      <div class="container">
+        <div class="stats">
+          <div class="stat"><strong><span data-count="10">0</span>%</strong><small>完全成功報酬<br>売り手・買い手それぞれ</small></div>
+          <div class="stat"><strong><span data-count="10">0</span>万円</strong><small>最低報酬<br>スモール案件にも対応</small></div>
+          <div class="stat"><strong><span data-count="0">0</span>円</strong><small>初期費用<br>登録・相談・掲載すべて無料</small></div>
+          <div class="stat"><strong><span data-count="4">0</span>種</strong><small>対応業態<br>スペース事業を幅広くカバー</small></div>
         </div>
       </div>
     </section>
@@ -175,11 +232,11 @@
       <div class="container">
         <div class="section-title"><span>FLOW</span><h2>ご利用の流れ</h2></div>
         <div class="flow">
-          <article><b>1</b><i>□</i><h3>お問い合わせ</h3><p>フォームからお気軽にご相談ください。</p></article>
-          <article><b>2</b><i>☏</i><h3>ヒアリング・査定</h3><p>専門スタッフが事業内容を確認し簡易査定。</p></article>
-          <article><b>3</b><i>⌕</i><h3>マッチング</h3><p>条件に合う候補者をご提案します。</p></article>
-          <article><b>4</b><i>♙</i><h3>条件交渉・契約</h3><p>契約締結まで丁寧にサポートします。</p></article>
-          <article><b>5</b><i>🤝</i><h3>成約・引き渡し</h3><p>引き渡しまでしっかり伴走します。</p></article>
+          <article><b>1</b><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 20l1-4.3A8.38 8.38 0 0 1 3 11.5 8.5 8.5 0 0 1 12 3a8.38 8.38 0 0 1 9 8.5z"/></svg></i><h3>お問い合わせ</h3><p>フォームからお気軽にご相談ください。</p></article>
+          <article><b>2</b><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4H6a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3"/><rect x="9" y="2.5" width="6" height="4" rx="1"/><path d="M8 12h6M8 16h4"/></svg></i><h3>ヒアリング・査定</h3><p>専門スタッフが事業内容を確認し簡易査定。</p></article>
+          <article><b>3</b><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></i><h3>マッチング</h3><p>条件に合う候補者をご提案します。</p></article>
+          <article><b>4</b><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6"/><path d="M14 3l5 5v4"/><path d="M14 3v5h5"/><path d="M21 16.5l-4 4-2-2"/></svg></i><h3>条件交渉・契約</h3><p>契約締結まで丁寧にサポートします。</p></article>
+          <article><b>5</b><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="14" r="4"/><path d="M11 11l8-8 2 2-2 2 1.5 1.5L18 11l-2-2"/></svg></i><h3>成約・引き渡し</h3><p>引き渡しまでしっかり伴走します。</p></article>
         </div>
       </div>
     </section>
@@ -194,7 +251,7 @@
           <article><div class="mini room-c"></div><h3>レンタルスタジオ</h3><p>ダンス・ヨガ・撮影スタジオなど</p></article>
         </div>
         <div class="company-cta">
-          <div class="company"><small>運営会社</small><h3>VMK Inc.</h3><p>スペースバトンは、都内・東海圏でレンタルスペースの運営を行うVMKが運営しています。</p></div>
+          <div class="company"><small>運営会社</small><h3>VMK Inc.</h3><p>スペースバトンは、東京・東海圏で複数のレンタルスペースを自社運営するVMKが手がけています。</p><p class="company-msg">「やめたいのに、やめると損する」——私たち自身が運営者として、その悔しさを知っています。だからこそ撤退ではなく、<strong>“次のオーナーへ託す”</strong>という選択肢を。立ち上げ・運営・引き継ぎまで現場を知るプロが、最後まで伴走します。</p><p class="company-sign">SpaceBaton 運営チーム ／ VMK Inc.</p></div>
           <div class="office" style="display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;">
             <img src="vmk-logo.jpg" alt="VMK inc." style="max-width:75%;height:auto;display:block;">
           </div>
@@ -244,7 +301,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
-        <a class="logo light" href="#"><span class="logo-mark"></span><span><strong>SpaceBaton</strong><small>あなたのスペース、次のオーナーへ。</small></span></a>
+        <a class="logo light" href="index.html"><span class="logo-mark"></span><span><strong>SpaceBaton</strong><small>あなたのスペース、次のオーナーへ。</small></span></a>
         <nav class="footer-nav">
           <a href="#features">サービスの特徴</a>
           <a href="listings.html">案件一覧</a>
@@ -256,9 +313,86 @@
       </div>
       <div class="footer-bottom">
         <p><strong style="color:#fff">VMK Inc.</strong>　〒460-0022 愛知県名古屋市中区金山1丁目14-16 トキワビル5階</p>
+        <nav class="footer-legal">
+          <a href="privacy.html">プライバシーポリシー</a>
+          <a href="terms.html">特定商取引法に基づく表記</a>
+        </nav>
         <small class="copy">© VMK Inc.</small>
       </div>
     </div>
   </footer>
+
+  <script>
+    // ── モバイルメニュー開閉 ──
+    (function(){
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('primaryNav');
+      if(toggle && nav){
+        toggle.addEventListener('click', function(){
+          var open = document.body.classList.toggle('nav-open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          toggle.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
+        });
+        nav.addEventListener('click', function(e){
+          if(e.target.tagName === 'A'){
+            document.body.classList.remove('nav-open');
+            toggle.setAttribute('aria-expanded','false');
+          }
+        });
+      }
+    })();
+
+    // ── スクロールでフェードイン（対象を自動収集・グループ内はstagger）──
+    (function(){
+      var groups = ['.features','.stats','.listing-cards','.flow','.target-cards','.company-cta','.faq-list'];
+      var els = [];
+      document.querySelectorAll('.section-title').forEach(function(el){ el.classList.add('reveal'); els.push(el); });
+      groups.forEach(function(sel){
+        var parent = document.querySelector(sel);
+        if(!parent) return;
+        Array.prototype.forEach.call(parent.children, function(child, i){
+          child.classList.add('reveal');
+          child.style.transitionDelay = (i * 70) + 'ms';
+          els.push(child);
+        });
+      });
+      if(!('IntersectionObserver' in window)){
+        els.forEach(function(el){ el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ en.target.classList.add('is-visible'); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+      els.forEach(function(el){ io.observe(el); });
+    })();
+
+    // ── 数字カウントアップ ──
+    (function(){
+      var nums = document.querySelectorAll('[data-count]');
+      if(!nums.length) return;
+      var run = function(el){
+        var target = parseFloat(el.getAttribute('data-count')) || 0;
+        var dur = 1200, start = null;
+        var step = function(ts){
+          if(!start) start = ts;
+          var p = Math.min((ts - start) / dur, 1);
+          var eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(target * eased);
+          if(p < 1) requestAnimationFrame(step);
+          else el.textContent = target;
+        };
+        requestAnimationFrame(step);
+      };
+      if(!('IntersectionObserver' in window)){ nums.forEach(run); return; }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ run(en.target); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.6 });
+      nums.forEach(function(el){ io.observe(el); });
+    })();
+  </script>
 </body>
 </html>

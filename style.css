@@ -194,3 +194,15 @@ body.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-4
   .thumb{height:132px}
   .listing-card h3,.card-body h3{font-size:14px}
 }
+
+/* ===== 追加イメージ画像（パーティールーム系・ラウンジ系） room-f〜room-o ===== */
+.room-f{background-image:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.14)),url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=900&q=80')}
+.room-g{background-image:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.14)),url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80')}
+.room-h{background-image:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.14)),url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=900&q=80')}
+.room-i{background-image:linear-gradient(135deg,rgba(255,255,255,.06),rgba(0,0,0,.18)),url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=900&q=80')}
+.room-j{background-image:linear-gradient(135deg,rgba(255,255,255,.1),rgba(0,0,0,.1)),url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=900&q=80')}
+.room-k{background-image:linear-gradient(135deg,rgba(255,255,255,.1),rgba(0,0,0,.1)),url('https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=900&q=80')}
+.room-l{background-image:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.14)),url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=900&q=80')}
+.room-m{background-image:linear-gradient(135deg,rgba(255,255,255,.1),rgba(0,0,0,.1)),url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80')}
+.room-n{background-image:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.14)),url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80')}
+.room-o{background-image:linear-gradient(135deg,rgba(255,255,255,.1),rgba(0,0,0,.1)),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80')}

@@ -98,29 +98,28 @@
       <button class="filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="filterInner">絞り込み <span class="ft-icon">＋</span></button>
       <div class="filter-inner" id="filterInner">
         <span class="filter-label">絞り込み：</span>
-        <select class="filter-select">
+        <select class="filter-select" id="filterType">
           <option value="">業態：すべて</option>
-          <option>レンタルスペース</option>
-          <option>民泊・簡易宿所</option>
-          <option>貸し会議室</option>
-          <option>レンタルスタジオ</option>
+          <option value="レンタルスペース">レンタルスペース</option>
+          <option value="民泊・簡易宿所">民泊・簡易宿所</option>
+          <option value="貸し会議室">貸し会議室</option>
+          <option value="レンタルスタジオ">レンタルスタジオ</option>
         </select>
-        <select class="filter-select">
+        <select class="filter-select" id="filterArea">
           <option value="">エリア：すべて</option>
-          <option>東海（愛知・岐阜・三重）</option>
-          <option>関東（東京・神奈川他）</option>
-          <option>関西（大阪・京都他）</option>
-          <option>その他</option>
+          <option value="東海">東海（愛知・岐阜・三重）</option>
+          <option value="関東">関東（東京・神奈川他）</option>
+          <option value="関西">関西（大阪・京都他）</option>
+          <option value="その他">その他</option>
         </select>
-        <select class="filter-select">
+        <select class="filter-select" id="filterPrice">
           <option value="">価格帯：すべて</option>
-          <option>〜100万円</option>
-          <option>100〜300万円</option>
-          <option>300〜500万円</option>
-          <option>500万円以上</option>
+          <option value="0-100">〜100万円</option>
+          <option value="100-300">100〜300万円</option>
+          <option value="300-99999">300万円以上</option>
         </select>
-        <button class="filter-btn">この条件で検索</button>
-        <button class="filter-reset">リセット</button>
+        <button class="filter-btn" id="filterBtn">この条件で検索</button>
+        <button class="filter-reset" id="filterReset">リセット</button>
       </div>
     </div>
   </div>
@@ -129,17 +128,17 @@
     <div class="container">
       <div class="results-bar">
         <p class="results-count"><strong>7</strong> 件の案件が見つかりました</p>
-        <select class="sort-select">
-          <option>新着順</option>
-          <option>価格が低い順</option>
-          <option>価格が高い順</option>
-          <option>月商が高い順</option>
+        <select class="sort-select" id="sortSelect">
+          <option value="new">新着順</option>
+          <option value="price-asc">価格が低い順</option>
+          <option value="price-desc">価格が高い順</option>
+          <option value="sales-desc">売上が高い順</option>
         </select>
       </div>
 
       <p class="note" style="text-align:left;margin:0 0 16px">※「年間売上」は予約サイト（スペースマーケット等）の手数料を差し引いた後の金額です。</p>
       <div class="listings-grid cards">
-        <a href="listing-detail-07.html" class="card-anchor">
+        <a href="listing-detail-07.html" class="card-anchor" data-type="レンタルスペース" data-area="東海" data-price="30" data-sales="110">
           <article class="listing-card">
             <div class="thumb room-i"><em>レンタルスペース</em><em>東海エリア</em><span class="photo-note">※イメージ写真</span></div>
             <div class="card-body">
@@ -151,7 +150,7 @@
             </div>
           </article>
         </a>
-        <a href="listing-detail-06.html" class="card-anchor">
+        <a href="listing-detail-06.html" class="card-anchor" data-type="レンタルスペース" data-area="東海" data-price="50" data-sales="160">
           <article class="listing-card">
             <div class="thumb room-g"><em>レンタルスペース</em><em>東海エリア</em><span class="photo-note">※イメージ写真</span></div>
             <div class="card-body">
@@ -163,7 +162,7 @@
             </div>
           </article>
         </a>
-        <a href="listing-detail-05.html" class="card-anchor">
+        <a href="listing-detail-05.html" class="card-anchor" data-type="レンタルスペース" data-area="関西" data-price="50" data-sales="180">
           <article class="listing-card">
             <div class="thumb room-f"><em>レンタルスペース</em><em>関西エリア</em><span class="photo-note">※イメージ写真</span></div>
             <div class="card-body">
@@ -175,7 +174,7 @@
             </div>
           </article>
         </a>
-        <a href="listing-detail-04.html" class="card-anchor">
+        <a href="listing-detail-04.html" class="card-anchor" data-type="レンタルスペース" data-area="関東" data-price="350" data-sales="502">
           <article class="listing-card">
             <div class="thumb room-b"><em>レンタルスペース</em><em>関東エリア</em><span class="photo-note">※イメージ写真</span></div>
             <div class="card-body">
@@ -187,7 +186,7 @@
             </div>
           </article>
         </a>
-        <a href="listing-detail.html" class="card-anchor">
+        <a href="listing-detail.html" class="card-anchor" data-type="レンタルスペース" data-area="東海" data-price="150" data-sales="120">
           <article class="listing-card">
             <div class="thumb room-a"><em>レンタルスペース</em><em>東海エリア</em><span class="photo-note">※イメージ写真</span></div>
             <div class="card-body">
@@ -199,7 +198,7 @@
             </div>
           </article>
         </a>
-        <a href="listing-detail-02.html" class="card-anchor">
+        <a href="listing-detail-02.html" class="card-anchor" data-type="レンタルスペース" data-area="東海" data-price="150" data-sales="180">
           <article class="listing-card">
             <div class="thumb room-d"><em>レンタルスペース</em><em>東海エリア</em><span class="photo-note">※イメージ写真</span></div>
             <div class="card-body">
@@ -211,7 +210,7 @@
             </div>
           </article>
         </a>
-        <a href="listing-detail-03.html" class="card-anchor">
+        <a href="listing-detail-03.html" class="card-anchor" data-type="レンタルスタジオ" data-area="東海" data-price="250" data-sales="240">
           <article class="listing-card">
             <div class="thumb room-c"><em>レンタルスタジオ</em><em>東海エリア</em><span class="photo-note">※イメージ写真</span></div>
             <div class="card-body">
@@ -252,6 +251,10 @@
       </div>
       <div class="footer-bottom">
         <p><strong style="color:#fff">VMK Inc.</strong>　〒460-0022 愛知県名古屋市中区金山1丁目14-16 トキワビル5階</p>
+        <nav class="footer-legal">
+          <a href="privacy.html">プライバシーポリシー</a>
+          <a href="terms.html">特定商取引法に基づく表記</a>
+        </nav>
         <small class="copy">© VMK Inc.</small>
       </div>
     </div>
@@ -260,6 +263,38 @@
   <script>
     (function(){var t=document.getElementById('navToggle'),n=document.getElementById('primaryNav');if(t&&n){t.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');t.setAttribute('aria-expanded',o?'true':'false');});n.addEventListener('click',function(e){if(e.target.tagName==='A'){document.body.classList.remove('nav-open');t.setAttribute('aria-expanded','false');}});}})();
     (function(){var b=document.getElementById('filterToggle'),f=document.getElementById('filterInner');if(b&&f){b.addEventListener('click',function(){var o=f.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.querySelector('.ft-icon').textContent=o?'－':'＋';});}})();
+    (function(){
+      var grid=document.querySelector('.listings-grid');
+      if(!grid)return;
+      var cards=Array.prototype.slice.call(grid.querySelectorAll('.card-anchor'));
+      var typeSel=document.getElementById('filterType'),areaSel=document.getElementById('filterArea'),priceSel=document.getElementById('filterPrice'),sortSel=document.getElementById('sortSelect');
+      var countEl=document.querySelector('.results-count strong');
+      function apply(){
+        var t=typeSel.value,a=areaSel.value,p=priceSel.value,shown=0;
+        cards.forEach(function(c){
+          var okT=!t||c.dataset.type===t;
+          var okA=!a||c.dataset.area===a;
+          var okP=true;
+          if(p){var r=p.split('-'),price=parseInt(c.dataset.price,10);okP=price>=+r[0]&&price<=+r[1];}
+          var show=okT&&okA&&okP;
+          c.style.display=show?'':'none';
+          if(show)shown++;
+        });
+        if(countEl)countEl.textContent=shown;
+      }
+      function sortCards(){
+        var v=sortSel?sortSel.value:'new',arr=cards.slice();
+        if(v==='price-asc')arr.sort(function(x,y){return x.dataset.price-y.dataset.price;});
+        else if(v==='price-desc')arr.sort(function(x,y){return y.dataset.price-x.dataset.price;});
+        else if(v==='sales-desc')arr.sort(function(x,y){return y.dataset.sales-x.dataset.sales;});
+        arr.forEach(function(c){grid.appendChild(c);});
+      }
+      var btn=document.getElementById('filterBtn'),reset=document.getElementById('filterReset');
+      if(btn)btn.addEventListener('click',apply);
+      [typeSel,areaSel,priceSel].forEach(function(s){if(s)s.addEventListener('change',apply);});
+      if(sortSel)sortSel.addEventListener('change',function(){sortCards();apply();});
+      if(reset)reset.addEventListener('click',function(){typeSel.value='';areaSel.value='';priceSel.value='';if(sortSel)sortSel.value='new';sortCards();apply();});
+    })();
   </script>
 </body>
 </html>

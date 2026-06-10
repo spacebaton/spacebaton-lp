@@ -195,6 +195,9 @@ body.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-4
   .listing-card h3,.card-body h3{font-size:14px}
 }
 
+/* ===== キーボード操作のフォーカス可視化（アクセシビリティ） ===== */
+a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
+
 /* ===== 追加イメージ画像（室内インテリア） room-f〜room-o ===== */
 .room-f{background-image:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.08)),url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80')}
 .room-g{background-image:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.08)),url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80')}

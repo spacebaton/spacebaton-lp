@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ご相談・お問い合わせ｜SpaceBaton</title>
+  <meta name="description" content="レンタルスペース・民泊・貸し会議室・スタジオのM&A（売買）のご相談窓口。売りたい方の無料査定、買いたい方の希望条件登録を受け付けています。SpaceBaton（スペースバトン）" />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero{background:linear-gradient(120deg,#061b3d 0%,#0a3a8a 100%);padding:44px 0 36px;color:#fff}
+    .page-hero h1{font-size:30px;font-weight:900;margin:0 0 6px}
+    .page-hero p{color:rgba(255,255,255,.78);font-size:14px;font-weight:700;margin:0}
+    .breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;margin-bottom:14px;color:rgba(255,255,255,.55)}
+    .breadcrumb a{color:rgba(255,255,255,.7)}
+
+    .form-main{padding:40px 0 64px}
+    .form-wrap{max-width:760px;margin:auto}
+    .lead{color:var(--muted);font-weight:700;font-size:13.5px;line-height:1.9;margin:0 0 24px}
+    .lead strong{color:var(--text)}
+
+    /* 役割タブ */
+    .role-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px}
+    .role-tab{display:flex;flex-direction:column;align-items:center;gap:4px;padding:18px 12px;border:2px solid var(--line);border-radius:14px;background:#fff;cursor:pointer;font-family:'Noto Sans JP',sans-serif;transition:all .18s ease;text-align:center}
+    .role-tab .rt-emoji{font-size:24px;line-height:1}
+    .role-tab .rt-title{font-size:15px;font-weight:900;color:var(--text)}
+    .role-tab .rt-sub{font-size:11px;font-weight:700;color:var(--muted)}
+    .role-tab:hover{border-color:#b9cdf0}
+    .role-tab.active{border-color:var(--blue);background:#f3f8ff;box-shadow:0 6px 16px rgba(8,76,180,.12)}
+    .role-tab.active .rt-title{color:var(--blue)}
+
+    /* フォーム */
+    .form-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;box-shadow:0 8px 24px rgba(11,47,104,.07)}
+    fieldset{border:0;margin:0;padding:0;min-width:0}
+    fieldset[disabled]{display:none}
+    .sec-note{font-size:12.5px;color:var(--muted);font-weight:700;margin:0 0 18px;padding:10px 14px;background:var(--light);border-radius:8px;line-height:1.7}
+    .field{margin-bottom:18px}
+    .field label{display:block;font-size:13px;font-weight:900;color:var(--text);margin-bottom:7px}
+    .field label .req{color:#d63a2e;font-size:11px;margin-left:6px}
+    .field .hint{font-size:11px;color:var(--muted);font-weight:700;margin-top:5px}
+    .field input[type=text],.field input[type=email],.field input[type=tel],.field input[type=number],.field select,.field textarea{
+      width:100%;border:1.5px solid #d7e1f2;border-radius:9px;padding:12px 13px;font-family:'Noto Sans JP',sans-serif;font-size:14px;font-weight:500;color:var(--text);background:#fff}
+    .field textarea{min-height:96px;resize:vertical;line-height:1.7}
+    .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(8,76,180,.12)}
+    .field-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .checks{display:flex;flex-wrap:wrap;gap:8px 16px}
+    .checks label{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:#33415b;margin:0}
+    .checks input{width:17px;height:17px;accent-color:var(--blue)}
+    .agree{display:flex;align-items:flex-start;gap:9px;font-size:13px;font-weight:700;color:#33415b;line-height:1.7;margin-bottom:10px}
+    .agree input{width:18px;height:18px;margin-top:2px;accent-color:var(--blue);flex:0 0 auto}
+    .agree a{color:var(--blue);font-weight:900}
+    .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+    .form-submit{display:block;width:100%;background:var(--blue);color:#fff;border:none;border-radius:11px;padding:18px;font-family:'Noto Sans JP',sans-serif;font-size:17px;font-weight:900;cursor:pointer;margin-top:8px;transition:opacity .15s}
+    .form-submit:hover{opacity:.9}
+    .form-submit:disabled{opacity:.55;cursor:not-allowed}
+    .form-foot{font-size:11.5px;color:var(--muted);font-weight:700;text-align:center;margin-top:12px;line-height:1.7}
+
+    .form-success{display:none;text-align:center;padding:30px 20px}
+    .form-success.show{display:block}
+    .form-success .fs-ico{width:64px;height:64px;border-radius:50%;background:#e6f4ee;color:#0a6e3f;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 16px}
+    .form-success h2{font-size:22px;font-weight:900;color:var(--text);margin:0 0 10px}
+    .form-success p{font-size:14px;color:#4f5e76;font-weight:700;line-height:1.9;margin:0 0 6px}
+
+    @media(max-width:640px){
+      .role-tabs{grid-template-columns:1fr}
+      .form-card{padding:22px 18px}
+      .field-2{grid-template-columns:1fr}
+      .page-hero h1{font-size:25px}
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-mark"></span><span><strong>SpaceBaton</strong><small>あなたのスペース、次のオーナーへ。</small></span></a>
+      <nav class="nav" id="primaryNav">
+        <a href="index.html#features">サービスの特徴</a>
+        <a href="listings.html">案件一覧</a>
+        <a href="index.html#flow">ご利用の流れ</a>
+        <a href="index.html#target">対象スペース</a>
+        <a href="column.html">コラム</a>
+        <a href="index.html#faq">よくある質問</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-cta" href="contact.html">気軽に相談する</a>
+        <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="index.html">ホーム</a><span>›</span><span style="color:#fff">ご相談・お問い合わせ</span></nav>
+      <h1>ご相談・お問い合わせ</h1>
+      <p>相談・査定・案件のご紹介はすべて無料。費用は成約時の成功報酬のみ（売り手・買い手各10%・最低10万円・税別）。</p>
+    </div>
+  </div>
+
+  <main class="form-main">
+    <div class="container">
+      <div class="form-wrap">
+        <p class="lead">まず<strong>「売りたい／買いたい」</strong>をお選びください。内容に応じた項目だけが表示されます。ご記入は2〜3分。送信後、<strong>確認メールと30分の無料オンライン面談のご案内</strong>をお送りします。</p>
+
+        <!-- 役割タブ -->
+        <div class="role-tabs" role="tablist">
+          <button type="button" class="role-tab" data-role="sell" id="tab-sell"><span class="rt-emoji">🏷️</span><span class="rt-title">売りたい</span><span class="rt-sub">スペースを譲渡したい</span></button>
+          <button type="button" class="role-tab" data-role="buy" id="tab-buy"><span class="rt-emoji">🔎</span><span class="rt-title">買いたい</span><span class="rt-sub">スペースを取得したい</span></button>
+          <button type="button" class="role-tab" data-role="other" id="tab-other"><span class="rt-emoji">💬</span><span class="rt-title">その他</span><span class="rt-sub">まずは相談したい</span></button>
+        </div>
+
+        <div class="form-card">
+          <form id="inquiryForm" novalidate>
+            <input type="hidden" name="role" id="roleField" value="">
+            <!-- ハニーポット（スパム対策・人間は触らない） -->
+            <div class="hp"><label>このフィールドは入力しないでください<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+
+            <!-- 売り手 -->
+            <fieldset id="section-sell" disabled>
+              <p class="sec-note">スペースの譲渡をご検討の方へ。分かる範囲で大丈夫です。公開範囲はご希望に沿って調整します。</p>
+              <div class="field-2">
+                <div class="field"><label>お名前<span class="req">必須</span></label><input type="text" name="お名前" required></div>
+                <div class="field"><label>会社名・屋号</label><input type="text" name="会社名・屋号"></div>
+              </div>
+              <div class="field-2">
+                <div class="field"><label>メールアドレス<span class="req">必須</span></label><input type="email" name="メール" required></div>
+                <div class="field"><label>電話番号</label><input type="tel" name="電話"></div>
+              </div>
+              <div class="field-2">
+                <div class="field"><label>業態<span class="req">必須</span></label><select name="業態" required><option value="">選択してください</option><option>レンタルスペース</option><option>民泊・簡易宿所</option><option>貸し会議室</option><option>レンタルスタジオ</option><option>自習室</option><option>レンタルサロン</option><option>その他</option></select></div>
+                <div class="field"><label>エリア<span class="req">必須</span></label><select name="エリア" required><option value="">選択してください</option><option>東海</option><option>関東</option><option>関西</option><option>その他</option></select></div>
+              </div>
+              <div class="field"><label>所在地（市区まで）</label><input type="text" name="所在地" placeholder="例）愛知県名古屋市西区"></div>
+              <div class="field-2">
+                <div class="field"><label>賃料（万円／月）</label><input type="text" name="賃料"></div>
+                <div class="field"><label>年間売上（万円）</label><input type="text" name="年間売上"><div class="hint">予約サイト手数料を差し引いた後の金額でOK</div></div>
+              </div>
+              <div class="field-2">
+                <div class="field"><label>損益</label><select name="損益"><option value="">選択してください</option><option>黒字</option><option>赤字</option><option>トントン</option></select></div>
+                <div class="field"><label>譲渡希望価格（万円）</label><input type="text" name="譲渡希望価格" placeholder="応相談でもOK"></div>
+              </div>
+              <div class="field"><label>賃貸契約の名義変更（譲渡）の可否</label><select name="名義変更可否"><option value="">選択してください</option><option>オーナー交渉済み・変更可の見込み</option><option>未交渉</option><option>不可</option><option>不明</option></select><div class="hint">成約に最も影響する重要項目です</div></div>
+              <div class="field"><label>売却理由・備考</label><textarea name="売却理由・備考"></textarea></div>
+              <label class="agree"><input type="checkbox" name="同意_NDA" value="同意" required><span>守秘（NDA）と、成功報酬10%（最低10万円・税別）に同意します<span class="req">必須</span></span></label>
+            </fieldset>
+
+            <!-- 買い手 -->
+            <fieldset id="section-buy" disabled>
+              <p class="sec-note">スペースの取得をご検討の方へ。ご希望に合う案件（非公開含む）をご紹介します。</p>
+              <div class="field-2">
+                <div class="field"><label>お名前<span class="req">必須</span></label><input type="text" name="お名前" required></div>
+                <div class="field"><label>会社名（任意）</label><input type="text" name="会社名"></div>
+              </div>
+              <div class="field-2">
+                <div class="field"><label>メールアドレス<span class="req">必須</span></label><input type="email" name="メール" required></div>
+                <div class="field"><label>電話番号</label><input type="tel" name="電話"></div>
+              </div>
+              <div class="field"><label>希望業態（複数可）</label><div class="checks">
+                <label><input type="checkbox" name="希望業態" value="レンタルスペース">レンタルスペース</label>
+                <label><input type="checkbox" name="希望業態" value="民泊・簡易宿所">民泊・簡易宿所</label>
+                <label><input type="checkbox" name="希望業態" value="貸し会議室">貸し会議室</label>
+                <label><input type="checkbox" name="希望業態" value="レンタルスタジオ">レンタルスタジオ</label>
+                <label><input type="checkbox" name="希望業態" value="自習室">自習室</label>
+                <label><input type="checkbox" name="希望業態" value="レンタルサロン">レンタルサロン</label>
+                <label><input type="checkbox" name="希望業態" value="こだわらない">こだわらない</label>
+              </div></div>
+              <div class="field"><label>希望エリア（複数可）</label><div class="checks">
+                <label><input type="checkbox" name="希望エリア" value="東海">東海</label>
+                <label><input type="checkbox" name="希望エリア" value="関東">関東</label>
+                <label><input type="checkbox" name="希望エリア" value="関西">関西</label>
+                <label><input type="checkbox" name="希望エリア" value="その他">その他</label>
+                <label><input type="checkbox" name="希望エリア" value="こだわらない">こだわらない</label>
+              </div></div>
+              <div class="field-2">
+                <div class="field"><label>取得予算</label><select name="予算"><option value="">選択してください</option><option>〜100万円</option><option>100〜300万円</option><option>300〜500万円</option><option>500万円以上</option><option>相談したい</option></select></div>
+                <div class="field"><label>資金の目処</label><select name="資金"><option value="">選択してください</option><option>自己資金あり</option><option>融資を検討</option><option>これから検討</option></select></div>
+              </div>
+              <div class="field-2">
+                <div class="field"><label>運営・M&Aのご経験</label><select name="経験"><option value="">選択してください</option><option>運営経験あり</option><option>M&A経験あり</option><option>どちらもあり</option><option>未経験</option></select></div>
+                <div class="field"><label>取得の希望時期</label><select name="希望時期"><option value="">選択してください</option><option>すぐにでも</option><option>3ヶ月以内</option><option>半年以内</option><option>良い案件があれば</option></select></div>
+              </div>
+              <div class="field"><label>気になっている案件番号（あれば）</label><input type="text" name="案件番号" id="listingField" placeholder="例）SB-2026-004"></div>
+              <div class="field"><label>重視する点・ご要望</label><textarea name="重視する点・ご要望"></textarea></div>
+              <label class="agree"><input type="checkbox" name="同意_NDA" value="同意" required><span>守秘（NDA）に同意し、非公開案件のご紹介を希望します<span class="req">必須</span></span></label>
+            </fieldset>
+
+            <!-- その他 -->
+            <fieldset id="section-other" disabled>
+              <p class="sec-note">どちらか迷う方・まずは話を聞きたい方はこちら。</p>
+              <div class="field-2">
+                <div class="field"><label>お名前<span class="req">必須</span></label><input type="text" name="お名前" required></div>
+                <div class="field"><label>メールアドレス<span class="req">必須</span></label><input type="email" name="メール" required></div>
+              </div>
+              <div class="field"><label>電話番号</label><input type="tel" name="電話"></div>
+              <div class="field"><label>ご相談内容<span class="req">必須</span></label><textarea name="ご相談内容" required></textarea></div>
+              <label class="agree"><input type="checkbox" name="同意_NDA" value="同意" required><span>守秘（NDA）に同意します<span class="req">必須</span></span></label>
+            </fieldset>
+
+            <button type="submit" class="form-submit" id="submitBtn">送信する</button>
+            <p class="form-foot">送信内容は審査・ご連絡にのみ使用します。<a href="privacy.html" style="color:var(--blue);font-weight:900">プライバシーポリシー</a></p>
+          </form>
+
+          <!-- 送信完了 -->
+          <div class="form-success" id="formSuccess">
+            <div class="fs-ico">✓</div>
+            <h2>送信が完了しました</h2>
+            <p>ご入力いただいたメールアドレス宛に<strong>確認メール</strong>と<strong>30分の無料オンライン面談のご案内</strong>をお送りしました。</p>
+            <p>数分内に届かない場合は迷惑メールフォルダもご確認ください。</p>
+            <p style="margin-top:18px"><a href="index.html" class="header-cta" style="display:inline-block">トップへ戻る</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="logo light" href="index.html"><span class="logo-mark"></span><span><strong>SpaceBaton</strong><small>あなたのスペース、次のオーナーへ。</small></span></a>
+        <nav class="footer-nav">
+          <a href="index.html#features">サービスの特徴</a>
+          <a href="listings.html">案件一覧</a>
+          <a href="index.html#flow">ご利用の流れ</a>
+          <a href="index.html#target">対象スペース</a>
+          <a href="column.html">コラム</a>
+          <a href="index.html#faq">よくある質問</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p><strong style="color:#fff">VMK Inc.</strong>　〒460-0022 愛知県名古屋市中区金山1丁目14-16 トキワビル5階</p>
+        <nav class="footer-legal">
+          <a href="privacy.html">プライバシーポリシー</a>
+          <a href="terms.html">特定商取引法に基づく表記</a>
+        </nav>
+        <small class="copy">© VMK Inc.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── 送信先（Apps ScriptのwebアプリURLをデプロイ後にここへ）──
+    var ENDPOINT = 'PASTE_APPS_SCRIPT_WEBAPP_URL_HERE';
+
+    // ── モバイルメニュー ──
+    (function(){var t=document.getElementById('navToggle'),n=document.getElementById('primaryNav');if(t&&n){t.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');t.setAttribute('aria-expanded',o?'true':'false');});n.addEventListener('click',function(e){if(e.target.tagName==='A'){document.body.classList.remove('nav-open');t.setAttribute('aria-expanded','false');}});}})();
+
+    // ── 役割タブ切替 ──
+    (function(){
+      var tabs=document.querySelectorAll('.role-tab');
+      var sections={sell:document.getElementById('section-sell'),buy:document.getElementById('section-buy'),other:document.getElementById('section-other')};
+      var roleField=document.getElementById('roleField');
+      function setRole(role){
+        if(!sections[role])return;
+        tabs.forEach(function(t){t.classList.toggle('active',t.dataset.role===role);});
+        Object.keys(sections).forEach(function(k){sections[k].disabled=(k!==role);});
+        roleField.value=({sell:'売りたい',buy:'買いたい',other:'その他'})[role];
+        try{history.replaceState(null,'',location.pathname+'?role='+role+location.hash);}catch(e){}
+      }
+      tabs.forEach(function(t){t.addEventListener('click',function(){setRole(t.dataset.role);});});
+      // URLパラメータで初期役割/案件番号をプリセット
+      var p=new URLSearchParams(location.search);
+      var role=p.get('role'); if(role==='sell'||role==='buy'||role==='other')setRole(role); else setRole('sell');
+      var listing=p.get('listing'); if(listing){var lf=document.getElementById('listingField'); if(lf)lf.value=listing; if(role!=='other'&&role!=='sell')setRole('buy'); if(listing&&!role)setRole('buy');}
+      window.__setRole=setRole;
+    })();
+
+    // ── 送信 ──
+    (function(){
+      var form=document.getElementById('inquiryForm'),btn=document.getElementById('submitBtn');
+      form.addEventListener('submit',function(e){
+        e.preventDefault();
+        if(form._hp && form._hp.value){return;} // ハニーポットに入力＝bot
+        if(!form.reportValidity())return;
+        btn.disabled=true; btn.textContent='送信中…';
+        var data=new URLSearchParams(new FormData(form));
+        data.append('送信日時', new Date().toLocaleString('ja-JP'));
+        var done=function(){
+          form.style.display='none';
+          document.getElementById('formSuccess').classList.add('show');
+          document.getElementById('formSuccess').scrollIntoView({behavior:'smooth',block:'center'});
+        };
+        if(!ENDPOINT||ENDPOINT.indexOf('PASTE_')===0){ // 未配線でも画面確認できるように
+          console.warn('ENDPOINT未設定：送信はスキップしサンクス表示のみ'); done(); return;
+        }
+        fetch(ENDPOINT,{method:'POST',mode:'no-cors',body:data})
+          .then(done).catch(function(){ done(); });
+      });
+    })();
+  </script>
+</body>
+</html>

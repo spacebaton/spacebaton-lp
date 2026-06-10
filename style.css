@@ -195,6 +195,17 @@ body.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-4
   .listing-card h3,.card-body h3{font-size:14px}
 }
 
+/* ===== ヒーロー 売り手/買い手 2分割CTA ===== */
+.hero-cta-split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.hero-cta{display:flex;flex-direction:column;justify-content:center;gap:3px;padding:16px 40px 16px 20px;border-radius:12px;position:relative;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+.hero-cta small{font-size:12px;font-weight:800;opacity:.92}
+.hero-cta strong{font-size:18px;font-weight:900;line-height:1.3}
+.hero-cta-sell{background:var(--blue);color:#fff;box-shadow:0 8px 20px rgba(8,76,180,.28)}
+.hero-cta-buy{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+.hero-cta:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(11,47,104,.22)}
+.hero-cta-arrow{position:absolute;right:18px;top:50%;width:8px;height:8px;border-top:2.5px solid currentColor;border-right:2.5px solid currentColor;transform:translateY(-50%) rotate(45deg)}
+@media(max-width:560px){.hero-cta-split{grid-template-columns:1fr;gap:10px;margin-top:16px}.hero-cta strong{font-size:17px}}
+
 /* ===== キーボード操作のフォーカス可視化（アクセシビリティ） ===== */
 a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
 

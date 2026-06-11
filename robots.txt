@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://spacebaton-lp.vercel.app/sitemap.xml
+Sitemap: https://spacebaton.com/sitemap.xml

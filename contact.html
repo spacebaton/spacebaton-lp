@@ -103,7 +103,7 @@
   <main class="form-main">
     <div class="container">
       <div class="form-wrap">
-        <p class="lead">まず<strong>「売りたい／買いたい」</strong>をお選びください。内容に応じた項目だけが表示されます。ご記入は2〜3分。送信後、<strong>確認メールと30分の無料オンライン面談のご案内</strong>をお送りします。</p>
+        <p class="lead">まず<strong>「売りたい／買いたい」</strong>をお選びください。内容に応じた項目だけが表示されます。<strong>必須はお名前とメールだけ・最短30秒</strong>。送信後、<strong>確認メールと30分の無料オンライン面談のご案内</strong>をお送りします。お気軽にどうぞ。</p>
 
         <!-- 役割タブ -->
         <div class="role-tabs" role="tablist">
@@ -120,71 +120,38 @@
 
             <!-- 売り手 -->
             <fieldset id="section-sell" disabled>
-              <p class="sec-note">スペースの譲渡をご検討の方へ。分かる範囲で大丈夫です。公開範囲はご希望に沿って調整します。</p>
+              <p class="sec-note"><strong>必須はお名前とメールだけ</strong>。詳しいことは面談でお伺いするので、今は分かる範囲でOKです。</p>
               <div class="field-2">
                 <div class="field"><label>お名前<span class="req">必須</span></label><input type="text" name="お名前" required></div>
-                <div class="field"><label>会社名・屋号</label><input type="text" name="会社名・屋号"></div>
-              </div>
-              <div class="field-2">
                 <div class="field"><label>メールアドレス<span class="req">必須</span></label><input type="email" name="メール" required></div>
-                <div class="field"><label>電話番号</label><input type="tel" name="電話"></div>
               </div>
+              <div class="field"><label>電話番号（任意）</label><input type="tel" name="電話"></div>
               <div class="field-2">
-                <div class="field"><label>業態<span class="req">必須</span></label><select name="業態" required><option value="">選択してください</option><option>レンタルスペース</option><option>民泊・簡易宿所</option><option>貸し会議室</option><option>レンタルスタジオ</option><option>自習室</option><option>レンタルサロン</option><option>その他</option></select></div>
-                <div class="field"><label>エリア<span class="req">必須</span></label><select name="エリア" required><option value="">選択してください</option><option>東海</option><option>関東</option><option>関西</option><option>その他</option></select></div>
+                <div class="field"><label>業態（任意）</label><select name="業態"><option value="">選択してください</option><option>レンタルスペース</option><option>民泊・簡易宿所</option><option>貸し会議室</option><option>レンタルスタジオ</option><option>自習室</option><option>レンタルサロン</option><option>その他</option></select></div>
+                <div class="field"><label>エリア（任意）</label><select name="エリア"><option value="">選択してください</option><option>東海</option><option>関東</option><option>関西</option><option>その他</option></select></div>
               </div>
-              <div class="field"><label>所在地（市区まで）</label><input type="text" name="所在地" placeholder="例）愛知県名古屋市西区"></div>
-              <div class="field-2">
-                <div class="field"><label>賃料（万円／月）</label><input type="text" name="賃料"></div>
-                <div class="field"><label>年間売上（万円）</label><input type="text" name="年間売上"><div class="hint">予約サイト手数料を差し引いた後の金額でOK</div></div>
-              </div>
-              <div class="field-2">
-                <div class="field"><label>損益</label><select name="損益"><option value="">選択してください</option><option>黒字</option><option>赤字</option><option>トントン</option></select></div>
-                <div class="field"><label>譲渡希望価格（万円）</label><input type="text" name="譲渡希望価格" placeholder="応相談でもOK"></div>
-              </div>
-              <div class="field"><label>賃貸契約の名義変更（譲渡）の可否</label><select name="名義変更可否"><option value="">選択してください</option><option>オーナー交渉済み・変更可の見込み</option><option>未交渉</option><option>不可</option><option>不明</option></select><div class="hint">成約に最も影響する重要項目です</div></div>
-              <div class="field"><label>売却理由・備考</label><textarea name="売却理由・備考"></textarea></div>
-              <label class="agree"><input type="checkbox" name="同意_NDA" value="同意" required><span>守秘（NDA）と、成功報酬10%（最低10万円・税別）に同意します<span class="req">必須</span></span></label>
+              <div class="field"><label>ご状況・ひとこと（任意）</label><textarea name="ご状況・ひとこと" placeholder="だいたいの売上感、売りたい理由など、書ける範囲でOK"></textarea></div>
+              <label class="agree"><input type="checkbox" name="同意" value="同意" required><span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します<span class="req">必須</span></span></label>
             </fieldset>
 
             <!-- 買い手 -->
             <fieldset id="section-buy" disabled>
-              <p class="sec-note">スペースの取得をご検討の方へ。ご希望に合う案件（非公開含む）をご紹介します。</p>
+              <p class="sec-note"><strong>必須はお名前とメールだけ</strong>。ご希望に合う案件（非公開含む）をご紹介します。詳しい条件は面談で大丈夫です。</p>
               <div class="field-2">
                 <div class="field"><label>お名前<span class="req">必須</span></label><input type="text" name="お名前" required></div>
-                <div class="field"><label>会社名（任意）</label><input type="text" name="会社名"></div>
-              </div>
-              <div class="field-2">
                 <div class="field"><label>メールアドレス<span class="req">必須</span></label><input type="email" name="メール" required></div>
-                <div class="field"><label>電話番号</label><input type="tel" name="電話"></div>
               </div>
-              <div class="field"><label>希望業態（複数可）</label><div class="checks">
-                <label><input type="checkbox" name="希望業態" value="レンタルスペース">レンタルスペース</label>
-                <label><input type="checkbox" name="希望業態" value="民泊・簡易宿所">民泊・簡易宿所</label>
-                <label><input type="checkbox" name="希望業態" value="貸し会議室">貸し会議室</label>
-                <label><input type="checkbox" name="希望業態" value="レンタルスタジオ">レンタルスタジオ</label>
-                <label><input type="checkbox" name="希望業態" value="自習室">自習室</label>
-                <label><input type="checkbox" name="希望業態" value="レンタルサロン">レンタルサロン</label>
-                <label><input type="checkbox" name="希望業態" value="こだわらない">こだわらない</label>
-              </div></div>
-              <div class="field"><label>希望エリア（複数可）</label><div class="checks">
-                <label><input type="checkbox" name="希望エリア" value="東海">東海</label>
-                <label><input type="checkbox" name="希望エリア" value="関東">関東</label>
-                <label><input type="checkbox" name="希望エリア" value="関西">関西</label>
-                <label><input type="checkbox" name="希望エリア" value="その他">その他</label>
-                <label><input type="checkbox" name="希望エリア" value="こだわらない">こだわらない</label>
-              </div></div>
+              <div class="field"><label>電話番号（任意）</label><input type="tel" name="電話"></div>
               <div class="field-2">
-                <div class="field"><label>取得予算</label><select name="予算"><option value="">選択してください</option><option>〜100万円</option><option>100〜300万円</option><option>300〜500万円</option><option>500万円以上</option><option>相談したい</option></select></div>
-                <div class="field"><label>資金の目処</label><select name="資金"><option value="">選択してください</option><option>自己資金あり</option><option>融資を検討</option><option>これから検討</option></select></div>
+                <div class="field"><label>希望業態（任意）</label><select name="希望業態"><option value="">選択してください</option><option>レンタルスペース</option><option>民泊・簡易宿所</option><option>貸し会議室</option><option>レンタルスタジオ</option><option>自習室</option><option>レンタルサロン</option><option>こだわらない</option></select></div>
+                <div class="field"><label>希望エリア（任意）</label><select name="希望エリア"><option value="">選択してください</option><option>東海</option><option>関東</option><option>関西</option><option>その他</option><option>こだわらない</option></select></div>
               </div>
               <div class="field-2">
-                <div class="field"><label>運営・M&Aのご経験</label><select name="経験"><option value="">選択してください</option><option>運営経験あり</option><option>M&A経験あり</option><option>どちらもあり</option><option>未経験</option></select></div>
-                <div class="field"><label>取得の希望時期</label><select name="希望時期"><option value="">選択してください</option><option>すぐにでも</option><option>3ヶ月以内</option><option>半年以内</option><option>良い案件があれば</option></select></div>
+                <div class="field"><label>取得予算（任意）</label><select name="予算"><option value="">選択してください</option><option>〜100万円</option><option>100〜300万円</option><option>300〜500万円</option><option>500万円以上</option><option>相談したい</option></select></div>
+                <div class="field"><label>気になる案件番号（任意）</label><input type="text" name="案件番号" id="listingField" placeholder="例）SB-2026-004"></div>
               </div>
-              <div class="field"><label>気になっている案件番号（あれば）</label><input type="text" name="案件番号" id="listingField" placeholder="例）SB-2026-004"></div>
-              <div class="field"><label>重視する点・ご要望</label><textarea name="重視する点・ご要望"></textarea></div>
-              <label class="agree"><input type="checkbox" name="同意_NDA" value="同意" required><span>守秘（NDA）に同意し、非公開案件のご紹介を希望します<span class="req">必須</span></span></label>
+              <div class="field"><label>ご要望・ひとこと（任意）</label><textarea name="ご要望・ひとこと"></textarea></div>
+              <label class="agree"><input type="checkbox" name="同意" value="同意" required><span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します<span class="req">必須</span></span></label>
             </fieldset>
 
             <!-- その他 -->
@@ -195,8 +162,8 @@
                 <div class="field"><label>メールアドレス<span class="req">必須</span></label><input type="email" name="メール" required></div>
               </div>
               <div class="field"><label>電話番号</label><input type="tel" name="電話"></div>
-              <div class="field"><label>ご相談内容<span class="req">必須</span></label><textarea name="ご相談内容" required></textarea></div>
-              <label class="agree"><input type="checkbox" name="同意_NDA" value="同意" required><span>守秘（NDA）に同意します<span class="req">必須</span></span></label>
+              <div class="field"><label>ご相談内容<span class="req">必須</span></label><textarea name="ご相談内容" required placeholder="気になることを何でもどうぞ"></textarea></div>
+              <label class="agree"><input type="checkbox" name="同意" value="同意" required><span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します<span class="req">必須</span></span></label>
             </fieldset>
 
             <button type="submit" class="form-submit" id="submitBtn">送信する</button>

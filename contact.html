@@ -117,6 +117,7 @@
             <input type="hidden" name="role" id="roleField" value="">
             <!-- ハニーポット（スパム対策・人間は触らない） -->
             <div class="hp"><label>このフィールドは入力しないでください<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+            <input type="hidden" name="_js" id="jsField" value="">
 
             <!-- 売り手 -->
             <fieldset id="section-sell" disabled>
@@ -220,6 +221,9 @@
   <script>
     // ── 送信先（Apps ScriptのwebアプリURLをデプロイ後にここへ）──
     var ENDPOINT = 'https://script.google.com/macros/s/AKfycbzd_72KjzqlsdFb6qHC2k92K7uu-l5GVtr-fu2kFzOKOgomFeV6VgbVgUmXSSGZ-oysFQ/exec';
+    // ── スパム対策：JS実行の証跡＋ページ表示時刻 ──
+    var loadTime = Date.now();
+    (function(){ var j=document.getElementById('jsField'); if(j) j.value='ok'; })();
 
     // ── モバイルメニュー ──
     (function(){var t=document.getElementById('navToggle'),n=document.getElementById('primaryNav');if(t&&n){t.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');t.setAttribute('aria-expanded',o?'true':'false');});n.addEventListener('click',function(e){if(e.target.tagName==='A'){document.body.classList.remove('nav-open');t.setAttribute('aria-expanded','false');}});}})();
@@ -254,6 +258,7 @@
         btn.disabled=true; btn.textContent='送信中…';
         var data=new URLSearchParams(new FormData(form));
         data.append('送信日時', new Date().toLocaleString('ja-JP'));
+        data.append('_elapsed', String(Date.now()-loadTime));
         var done=function(){
           form.style.display='none';
           document.getElementById('formSuccess').classList.add('show');

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YS3E6THB9X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-YS3E6THB9X");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>レンタルスペース売却査定シミュレーター【無料・1分・登録不要】｜SpaceBaton</title>
+  <meta name="description" content="レンタルスペース・民泊・貸し会議室・スタジオの売却額を1分で無料シミュレーション。営業利益（EBITDA）×2〜3倍＋動産価値の実務基準で概算レンジを算出。登録不要・個人情報不要、計算はすべてブラウザ内で完結します。" />
+  <link rel="canonical" href="https://spacebaton.com/simulator" />
+  <meta name="robots" content="index, follow" />
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SpaceBaton（スペースバトン）" />
+  <meta property="og:title" content="売却査定シミュレーター｜1分でスペースの売却額がわかる" />
+  <meta property="og:description" content="営業利益×2〜3倍＋動産価値。レンタルスペースM&Aの実務基準で、あなたのスペースの概算売却額を無料シミュレーション。登録不要・個人情報不要。" />
+  <meta property="og:url" content="https://spacebaton.com/simulator" />
+  <meta property="og:image" content="https://spacebaton.com/vmk-logo.jpg" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="売却査定シミュレーター｜1分でスペースの売却額がわかる" />
+  <meta name="twitter:description" content="営業利益×2〜3倍＋動産価値。レンタルスペースM&Aの実務基準で概算売却額を無料シミュレーション。" />
+  <meta name="twitter:image" content="https://spacebaton.com/vmk-logo.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23084cb4'/%3E%3Ctext x='16' y='22' font-size='18' font-weight='900' text-anchor='middle' fill='white' font-family='Arial'%3ESB%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "レンタルスペース売却査定シミュレーター",
+        "url": "https://spacebaton.com/simulator",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+        "description": "レンタルスペース・民泊・貸し会議室・レンタルスタジオの概算売却額を、営業利益（EBITDA）×2〜3倍＋動産価値の実務基準で無料シミュレーションできるツール。",
+        "provider": { "@type": "Organization", "name": "VMK Inc.", "url": "https://spacebaton.com/" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://spacebaton.com/" },
+          { "@type": "ListItem", "position": 2, "name": "売却査定シミュレーター", "item": "https://spacebaton.com/simulator" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "シミュレーション結果は正式な査定額ですか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "いいえ、入力値に基づく簡易試算です。実際の売却額は、契約条件・立地・設備の状態・買い手の需要などを踏まえた個別査定で決まります。無料査定では専門スタッフが実際の成約データをもとに具体的な金額をご提示します。" }
+          },
+          {
+            "@type": "Question",
+            "name": "赤字や利益ゼロのスペースでも売れますか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "売れる可能性は十分あります。内装・家具家電などの動産価値、駅近などの立地、承継しやすい契約条件に値段がつくためです。開業して間もない物件や低稼働の物件が成約した事例もあります。" }
+          },
+          {
+            "@type": "Question",
+            "name": "入力した数字はどこかに送信・保存されますか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "いいえ。計算はすべてお使いのブラウザ内で完結し、入力内容がサーバーに送信・保存されることはありません。氏名やメールアドレスの登録も不要です。" }
+          },
+          {
+            "@type": "Question",
+            "name": "動産（家具・家電・設備）の時価はどう見積もればいいですか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "購入時の金額の3〜5割が目安です。例えば内装・家具家電に200万円かけた場合、60〜100万円程度で入力してください。状態が良いもの、需要の高い設備（撮影機材・音響など）はより高く評価されることがあります。" }
+          },
+          {
+            "@type": "Question",
+            "name": "査定や売却に費用はかかりますか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "査定・登録・掲載はすべて無料です。費用が発生するのは成約したときのみで、成約額の10%（最低10万円）の完全成功報酬制です。売れなければ費用は一切かかりません。" }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    /* ── ページ固有 ── */
+    .sim-hero{background:linear-gradient(160deg,var(--deep) 0%,#0a2a63 55%,#084cb4 130%);color:#fff;padding:110px 0 46px;position:relative;overflow:hidden}
+    .sim-hero::after{content:'';position:absolute;right:-120px;top:-80px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.09),transparent 65%)}
+    .sim-hero .crumbs{font-size:12px;font-weight:700;opacity:.75;margin-bottom:14px}
+    .sim-hero .crumbs a{color:#fff;text-decoration:none}
+    .sim-hero h1{font-size:clamp(24px,4.4vw,38px);font-weight:900;line-height:1.35;margin:0 0 12px}
+    .sim-hero h1 em{font-style:normal;color:#ffd34d}
+    .sim-hero p.lead{font-size:14.5px;line-height:1.9;opacity:.92;max-width:660px;margin:0}
+    .sim-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+    .sim-badges span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:6px 14px;font-size:12px;font-weight:900}
+
+    .sim-wrap{background:var(--light);padding:40px 0 70px}
+    .sim-grid{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:24px;align-items:start}
+    .sim-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(11,47,104,.07)}
+    .sim-card h2{font-size:17px;font-weight:900;color:var(--text);margin:0 0 4px;display:flex;align-items:center;gap:8px}
+    .sim-card h2 .stp{background:var(--blue);color:#fff;border-radius:8px;font-size:11px;padding:3px 8px;letter-spacing:.04em}
+    .sim-card .note{font-size:12px;color:var(--muted);font-weight:700;margin:0 0 20px}
+    .sim-sec{border-top:1px dashed var(--line);padding-top:18px;margin-top:18px}
+    .sim-sec:first-of-type{border-top:none;padding-top:0;margin-top:14px}
+    .sim-sec h3{font-size:13px;font-weight:900;color:var(--blue);margin:0 0 12px;letter-spacing:.03em}
+    .f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .fld{margin-bottom:14px}
+    .fld label{display:block;font-size:13px;font-weight:900;color:var(--text);margin-bottom:6px}
+    .fld label .opt{font-size:10.5px;font-weight:800;color:#fff;background:#9aa7bd;border-radius:6px;padding:2px 6px;margin-left:6px;vertical-align:1px}
+    .fld label .must{font-size:10.5px;font-weight:800;color:#fff;background:#e0542e;border-radius:6px;padding:2px 6px;margin-left:6px;vertical-align:1px}
+    .fld .hint{font-size:11px;color:var(--muted);font-weight:700;margin-top:5px;line-height:1.6}
+    .num-in{position:relative}
+    .num-in input{width:100%;box-sizing:border-box;border:2px solid var(--line);border-radius:10px;padding:12px 52px 12px 14px;font-size:16px;font-weight:900;color:var(--text);font-family:inherit;transition:border-color .15s;-moz-appearance:textfield}
+    .num-in input::-webkit-outer-spin-button,.num-in input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+    .num-in input:focus{outline:none;border-color:var(--blue)}
+    .num-in .unit{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:12px;font-weight:900;color:var(--muted)}
+    .fld select{width:100%;box-sizing:border-box;border:2px solid var(--line);border-radius:10px;padding:12px 14px;font-size:14px;font-weight:800;color:var(--text);font-family:inherit;background:#fff;cursor:pointer}
+    .fld select:focus{outline:none;border-color:var(--blue)}
+    .sim-calc-btn{width:100%;border:none;cursor:pointer;background:var(--blue);color:#fff;font-family:inherit;font-size:16.5px;font-weight:900;border-radius:12px;padding:17px;margin-top:8px;box-shadow:0 8px 20px rgba(8,76,180,.3);transition:transform .15s,box-shadow .15s}
+    .sim-calc-btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(8,76,180,.36)}
+    .sim-err{display:none;background:#fdf1ee;border:1px solid #f3c4b6;color:#b23c1c;border-radius:10px;padding:10px 14px;font-size:12.5px;font-weight:800;margin-top:12px}
+
+    /* 結果パネル */
+    .res-panel{position:sticky;top:86px}
+    .res-card{background:linear-gradient(165deg,var(--deep),#0b2f68);color:#fff;border-radius:18px;padding:26px;box-shadow:0 14px 34px rgba(6,27,61,.3)}
+    .res-card h2{font-size:14px;font-weight:900;margin:0 0 4px;color:#9fc0f5;letter-spacing:.06em}
+    .res-empty{padding:26px 4px 12px;text-align:center}
+    .res-empty .ill{font-size:40px;margin-bottom:10px}
+    .res-empty p{font-size:13px;font-weight:800;line-height:1.9;opacity:.85;margin:0}
+    .res-body{display:none}
+    .res-range{margin:14px 0 4px;text-align:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 10px}
+    .res-range .amounts{font-size:clamp(24px,3vw,30px);font-weight:900;line-height:1.2;color:#ffd34d}
+    .res-range .amounts small{font-size:14px;color:#ffd34d}
+    .res-range .amounts .tilde{color:#fff;opacity:.6;font-size:20px;padding:0 4px}
+    .res-range .cap{font-size:11px;font-weight:800;opacity:.75;margin-top:8px}
+    .res-break{margin-top:16px}
+    .res-break h3{font-size:12px;font-weight:900;color:#9fc0f5;margin:0 0 10px;letter-spacing:.05em}
+    .rb-row{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;font-weight:800;padding:7px 0;border-bottom:1px dashed rgba(255,255,255,.15)}
+    .rb-row b{font-size:14px;font-weight:900}
+    .rb-bar{height:10px;border-radius:6px;background:rgba(255,255,255,.12);overflow:hidden;display:flex;margin-top:10px}
+    .rb-bar i{display:block;height:100%}
+    .rb-bar .p1{background:#4d8bf0}
+    .rb-bar .p2{background:#ffd34d}
+    .rb-legend{display:flex;gap:14px;font-size:10.5px;font-weight:800;opacity:.85;margin-top:6px}
+    .rb-legend i{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+    .res-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+    .res-chips span{font-size:10.5px;font-weight:900;border-radius:999px;padding:4px 10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}
+    .res-chips span.up{color:#8ef0b6}
+    .res-note{font-size:10.5px;line-height:1.8;opacity:.65;margin-top:14px}
+    .res-cta{display:block;text-align:center;background:#ffd34d;color:var(--deep);font-size:15.5px;font-weight:900;text-decoration:none;border-radius:12px;padding:16px;margin-top:16px;box-shadow:0 8px 20px rgba(0,0,0,.25);transition:transform .15s}
+    .res-cta:hover{transform:translateY(-2px)}
+    .res-cta small{display:block;font-size:10.5px;font-weight:800;opacity:.75;margin-top:2px}
+    .res-share{display:flex;gap:8px;margin-top:10px}
+    .res-share button{flex:1;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;font-family:inherit;font-size:11.5px;font-weight:900;border-radius:10px;padding:10px;cursor:pointer;transition:background .15s}
+    .res-share button:hover{background:rgba(255,255,255,.1)}
+
+    /* 査定の考え方 */
+    .method{padding:64px 0;background:#fff}
+    .method .sec-head{text-align:center;margin-bottom:34px}
+    .method .sec-head small{display:block;font-size:12px;font-weight:900;color:var(--blue);letter-spacing:.14em;margin-bottom:8px}
+    .method .sec-head h2{font-size:clamp(20px,3.4vw,28px);font-weight:900;color:var(--text);margin:0}
+    .formula-box{max-width:760px;margin:0 auto 30px;background:var(--light);border:1px solid var(--line);border-radius:16px;padding:26px;text-align:center}
+    .formula-box .fx{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;font-weight:900}
+    .formula-box .fx .term{background:#fff;border:2px solid var(--blue);color:var(--blue);border-radius:12px;padding:14px 18px;font-size:14.5px;line-height:1.4}
+    .formula-box .fx .term small{display:block;font-size:10.5px;color:var(--muted);font-weight:800;margin-top:3px}
+    .formula-box .fx .op{font-size:22px;color:var(--muted)}
+    .formula-box .fx .eq{background:var(--blue);color:#fff;border-radius:12px;padding:14px 18px;font-size:15px}
+    .formula-box p{font-size:12.5px;color:var(--muted);font-weight:700;line-height:1.9;margin:16px 0 0}
+    .up-list{max-width:760px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .up-list article{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;gap:12px;align-items:flex-start;box-shadow:0 4px 14px rgba(11,47,104,.05)}
+    .up-list article i{font-style:normal;font-size:20px;flex-shrink:0;line-height:1.3}
+    .up-list article b{display:block;font-size:14px;font-weight:900;color:var(--text);margin-bottom:4px}
+    .up-list article p{font-size:12px;color:var(--muted);font-weight:700;line-height:1.8;margin:0}
+    .method-links{max-width:760px;margin:26px auto 0;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+    .method-links a{font-size:12.5px;font-weight:900;color:var(--blue);text-decoration:none;background:var(--light);border:1px solid var(--line);border-radius:999px;padding:9px 18px;transition:box-shadow .15s}
+    .method-links a:hover{box-shadow:0 4px 12px rgba(8,76,180,.15)}
+
+    /* FAQ */
+    .sim-faq{background:var(--light);padding:64px 0}
+    .sim-faq .sec-head{text-align:center;margin-bottom:28px}
+    .sim-faq .sec-head h2{font-size:clamp(20px,3.4vw,26px);font-weight:900;color:var(--text);margin:0}
+    .faq-list{display:flex;flex-direction:column;gap:12px;max-width:800px;margin:0 auto}
+    .faq-item{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+    .faq-item[open]{box-shadow:0 4px 16px rgba(11,47,104,.1)}
+    .faq-q{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;font-size:14.5px;font-weight:900;color:var(--text);cursor:pointer;list-style:none;gap:12px}
+    .faq-q::-webkit-details-marker{display:none}
+    .faq-q::after{content:'+';font-size:22px;font-weight:300;color:var(--blue);flex-shrink:0;transition:transform .2s;line-height:1}
+    .faq-item[open] .faq-q::after{transform:rotate(45deg)}
+    .faq-item[open] .faq-q{border-bottom:1px solid var(--line);color:var(--blue)}
+    .faq-a{padding:16px 22px;font-size:13.5px;line-height:2;color:var(--text);font-weight:500}
+
+    /* 最終CTA */
+    .sim-final{background:linear-gradient(160deg,var(--deep),#0a2a63);color:#fff;text-align:center;padding:64px 0}
+    .sim-final h2{font-size:clamp(20px,3.6vw,28px);font-weight:900;margin:0 0 12px}
+    .sim-final p{font-size:13.5px;font-weight:700;opacity:.85;line-height:2;margin:0 0 24px}
+    .sim-final a{display:inline-block;background:#ffd34d;color:var(--deep);font-size:16px;font-weight:900;text-decoration:none;border-radius:12px;padding:17px 40px;box-shadow:0 10px 26px rgba(0,0,0,.3);transition:transform .15s}
+    .sim-final a:hover{transform:translateY(-2px)}
+
+    @media (max-width: 920px){
+      .sim-grid{grid-template-columns:1fr}
+      .res-panel{position:static}
+      .up-list{grid-template-columns:1fr}
+      .f2{grid-template-columns:1fr}
+      .sim-hero{padding:96px 0 38px}
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark"></span>
+        <span><strong>SpaceBaton</strong><small>あなたのスペース、次のオーナーへ。</small></span>
+      </a>
+      <nav class="nav" id="primaryNav">
+        <a href="index.html#features">サービスの特徴</a>
+        <a href="listings.html">案件一覧</a>
+        <a href="simulator.html">査定シミュレーター</a>
+        <a href="column.html">コラム</a>
+        <a href="index.html#faq">よくある質問</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-cta" href="contact.html" target="_blank" rel="noopener" data-cta="header">無料査定・相談</a>
+        <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="primaryNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ヒーロー -->
+    <section class="sim-hero">
+      <div class="container">
+        <p class="crumbs"><a href="index.html">ホーム</a> › 売却査定シミュレーター</p>
+        <h1>あなたのスペース、<br>いくらで売れる？ <em>1分</em>で概算査定</h1>
+        <p class="lead">レンタルスペース・民泊・貸し会議室・レンタルスタジオのM&A実務で使われる「営業利益（EBITDA）×2〜3倍＋動産価値」の基準で、概算の売却額レンジを算出します。</p>
+        <div class="sim-badges">
+          <span>✓ 完全無料</span>
+          <span>✓ 登録・個人情報 不要</span>
+          <span>✓ 入力はブラウザ内で完結（送信されません）</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- シミュレーター本体 -->
+    <section class="sim-wrap" id="sim">
+      <div class="container">
+        <div class="sim-grid">
+          <!-- 入力 -->
+          <div class="sim-card">
+            <h2><span class="stp">STEP 1</span>スペースの情報を入力</h2>
+            <p class="note">直近6〜12ヶ月の平均的な数字でOK。細かい正確さより「だいたい」で大丈夫です。</p>
+
+            <div class="sim-sec">
+              <h3>■ 基本情報</h3>
+              <div class="fld">
+                <label>業態<span class="must">必須</span></label>
+                <select id="in-biz">
+                  <option value="レンタルスペース">レンタルスペース（パーティー・多目的）</option>
+                  <option value="民泊・簡易宿所">民泊・簡易宿所</option>
+                  <option value="貸し会議室">貸し会議室</option>
+                  <option value="レンタルスタジオ">レンタルスタジオ（撮影・ダンス等）</option>
+                  <option value="レンタルサロン">レンタルサロン・自習室</option>
+                  <option value="その他">その他</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="sim-sec">
+              <h3>■ 毎月の数字（万円）</h3>
+              <div class="f2">
+                <div class="fld">
+                  <label>月間売上<span class="must">必須</span></label>
+                  <div class="num-in"><input type="number" id="in-sales" min="0" step="0.5" inputmode="decimal" placeholder="例）25"><span class="unit">万円/月</span></div>
+                  <div class="hint">予約サイト手数料を差し引いた入金ベースでOK</div>
+                </div>
+                <div class="fld">
+                  <label>月額家賃<span class="must">必須</span></label>
+                  <div class="num-in"><input type="number" id="in-rent" min="0" step="0.5" inputmode="decimal" placeholder="例）8"><span class="unit">万円/月</span></div>
+                  <div class="hint">共益費込み。所有物件なら0でOK</div>
+                </div>
+              </div>
+              <div class="fld">
+                <label>家賃以外の月間経費<span class="opt">任意</span></label>
+                <div class="num-in"><input type="number" id="in-cost" min="0" step="0.5" inputmode="decimal" placeholder="例）3"><span class="unit">万円/月</span></div>
+                <div class="hint">光熱費・通信費・清掃・消耗品など。不明なら空欄でOK</div>
+              </div>
+            </div>
+
+            <div class="sim-sec">
+              <h3>■ 譲渡する動産</h3>
+              <div class="fld">
+                <label>家具・家電・設備の想定時価<span class="opt">任意</span></label>
+                <div class="num-in"><input type="number" id="in-asset" min="0" step="1" inputmode="decimal" placeholder="例）60"><span class="unit">万円</span></div>
+                <div class="hint">目安＝購入時の金額の3〜5割（例：200万円かけた内装・設備なら60〜100万円）</div>
+              </div>
+            </div>
+
+            <div class="sim-sec">
+              <h3>■ 評価が変わる条件</h3>
+              <div class="f2">
+                <div class="fld">
+                  <label>運営歴</label>
+                  <select id="in-years">
+                    <option value="2">2年以上</option>
+                    <option value="1">1〜2年</option>
+                    <option value="0">1年未満</option>
+                  </select>
+                </div>
+                <div class="fld">
+                  <label>最寄り駅からの距離</label>
+                  <select id="in-loc">
+                    <option value="2">徒歩5分以内</option>
+                    <option value="1">徒歩10分以内</option>
+                    <option value="0">徒歩10分超・車利用</option>
+                  </select>
+                </div>
+              </div>
+              <div class="f2">
+                <div class="fld">
+                  <label>物件の契約形態</label>
+                  <select id="in-keiyaku">
+                    <option value="1" selected>賃貸・転貸（承継できる見込みあり）</option>
+                    <option value="2">自己所有</option>
+                    <option value="0">賃貸・転貸（承継は未確認）</option>
+                  </select>
+                  <div class="hint">未確認でもOK。承継交渉は私たちがサポートします</div>
+                </div>
+                <div class="fld">
+                  <label>運営体制</label>
+                  <select id="in-ops">
+                    <option value="2">ほぼ無人化・仕組み化済み</option>
+                    <option value="1" selected>一部は自分で対応</option>
+                    <option value="0">常に自分で運営</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="sim-calc-btn" id="calcBtn">査定額を計算する ›</button>
+            <div class="sim-err" id="simErr">月間売上と月額家賃を入力してください（所有物件の場合、家賃は0でOKです）。</div>
+          </div>
+
+          <!-- 結果 -->
+          <div class="res-panel">
+            <div class="res-card" id="resCard">
+              <h2>STEP 2｜概算査定結果</h2>
+              <div class="res-empty" id="resEmpty">
+                <div class="ill">🏷️</div>
+                <p>左のフォームに入力して<br>「査定額を計算する」を押すと、<br>ここに概算レンジが表示されます。</p>
+              </div>
+              <div class="res-body" id="resBody">
+                <div class="res-range">
+                  <div class="amounts"><span id="amtLow">0</span><small>万円</small><span class="tilde">〜</span><span id="amtHigh">0</span><small>万円</small></div>
+                  <div class="cap" id="rangeCap">概算売却額レンジ（簡易試算）</div>
+                </div>
+                <div class="res-break">
+                  <h3>内訳</h3>
+                  <div class="rb-row"><span id="bizLabel">事業価値（営業利益×倍率）</span><b id="bizVal">—</b></div>
+                  <div class="rb-row"><span>動産価値（家具・家電・設備）</span><b id="assetVal">—</b></div>
+                  <div class="rb-bar" id="rbBar"><i class="p1" id="barBiz"></i><i class="p2" id="barAsset"></i></div>
+                  <div class="rb-legend"><span><i style="background:#4d8bf0"></i>事業価値</span><span><i style="background:#ffd34d"></i>動産価値</span></div>
+                </div>
+                <div class="res-chips" id="resChips"></div>
+                <p class="res-note">※ 本結果は入力値に基づく簡易試算であり、実際の売却価格を保証するものではありません。契約条件・設備の状態・買い手の需要により変動します。正式な査定は無料の個別査定をご利用ください。</p>
+                <a class="res-cta" id="resCta" href="contact.html?role=sell" target="_blank" rel="noopener">この結果をもとに無料査定を依頼する ›<small>結果はフォームに自動で引き継がれます／完全成功報酬・売れるまで0円</small></a>
+                <div class="res-share">
+                  <button type="button" id="copyBtn">🔗 結果URLをコピー</button>
+                  <button type="button" id="shareBtn">📤 共有する</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 査定の考え方 -->
+    <section class="method">
+      <div class="container">
+        <div class="sec-head">
+          <small>HOW IT WORKS</small>
+          <h2>査定額はどう計算している？</h2>
+        </div>
+        <div class="formula-box">
+          <div class="fx">
+            <span class="term">年間営業利益<small>売上−家賃−経費（EBITDA）</small></span>
+            <span class="op">×</span>
+            <span class="term">2〜3倍<small>スモールM&Aの実務水準</small></span>
+            <span class="op">＋</span>
+            <span class="term">動産価値<small>家具・家電・設備の時価</small></span>
+            <span class="op">＝</span>
+            <span class="eq">概算売却額</span>
+          </div>
+          <p>スペースビジネスのスモールM&Aでは「営業利益（EBITDA）の2〜3年分＋引き継ぐ動産の時価」が売却額の実務的な目安です。買い手は「投資額を約2〜3年で回収できるか」で判断するため、この倍率に収れんします。倍率が2倍寄りか3倍寄りかは、下の条件で変わります。</p>
+        </div>
+        <div class="up-list">
+          <article><i>📈</i><div><b>運営歴が長く数字が安定している</b><p>12ヶ月以上の売上実績があると再現性を証明でき、倍率が上がります。</p></div></article>
+          <article><i>🏠</i><div><b>家賃比率が低い（売上の3割以下）</b><p>固定費が軽いほど買い手の手残りが増え、高倍率がつきやすくなります。5割超は要改善サインです。</p></div></article>
+          <article><i>🚉</i><div><b>駅近などの立地優位</b><p>徒歩5分以内は集客力の証明。同じ利益でも立地が良いほど強気の価格が通ります。</p></div></article>
+          <article><i>📜</i><div><b>契約を承継しやすい</b><p>所有物件、または貸主の承諾が見込める賃貸・転貸は、買い手の最大の不安を解消できます。</p></div></article>
+          <article><i>🤖</i><div><b>無人運営・仕組み化ができている</b><p>スマートロック・清掃外注などで「誰でも運営できる」状態なら、買い手層が一気に広がります。</p></div></article>
+          <article><i>🪑</i><div><b>動産は倍率と関係なく上乗せ</b><p>内装・家具・設備は利益がゼロでも価値がつきます。赤字撤退予定でも売れる理由がこれです。</p></div></article>
+        </div>
+        <div class="method-links">
+          <a href="column-detail-11.html">📖 実データで見る売却相場と査定の実例</a>
+          <a href="column-detail-04.html">📖 高く売るための準備チェックリスト</a>
+          <a href="column-detail-09.html">📖 低稼働・赤字でも売れる理由</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="sim-faq">
+      <div class="container">
+        <div class="sec-head"><h2>よくある質問</h2></div>
+        <div class="faq-list">
+          <details class="faq-item"><summary class="faq-q">シミュレーション結果は正式な査定額ですか？</summary><div class="faq-a">いいえ、入力値に基づく簡易試算です。実際の売却額は、契約条件・立地・設備の状態・買い手の需要などを踏まえた個別査定で決まります。無料査定では実際の成約データをもとに具体的な金額をご提示します。</div></details>
+          <details class="faq-item"><summary class="faq-q">赤字や利益ゼロのスペースでも売れますか？</summary><div class="faq-a">売れる可能性は十分あります。内装・家具家電などの動産価値、駅近などの立地、承継しやすい契約条件に値段がつくためです。開業して間もない物件や低稼働の物件が成約した事例もあります。詳しくは<a href="column-detail-09.html" style="color:var(--blue);font-weight:900">こちらの記事</a>をご覧ください。</div></details>
+          <details class="faq-item"><summary class="faq-q">入力した数字はどこかに送信・保存されますか？</summary><div class="faq-a">いいえ。計算はすべてお使いのブラウザ内で完結し、入力内容がサーバーに送信・保存されることはありません。氏名やメールアドレスの登録も不要です。安心してお試しください。</div></details>
+          <details class="faq-item"><summary class="faq-q">動産（家具・家電・設備）の時価はどう見積もればいいですか？</summary><div class="faq-a">購入時の金額の3〜5割が目安です。例えば内装・家具家電に200万円かけた場合、60〜100万円程度で入力してください。状態が良いもの、需要の高い設備（撮影機材・音響など）はより高く評価されることがあります。</div></details>
+          <details class="faq-item"><summary class="faq-q">査定や売却に費用はかかりますか？</summary><div class="faq-a">査定・登録・掲載はすべて無料です。費用が発生するのは成約したときのみで、成約額の10%（最低10万円）の完全成功報酬制。売れなければ費用は一切かかりません。</div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 最終CTA -->
+    <section class="sim-final">
+      <div class="container">
+        <h2>「思ったより高いかも」と思ったら、<br>無料査定で本当の金額を。</h2>
+        <p>シミュレーションはあくまで概算です。実際の成約データを持つ専門スタッフが、<br>あなたのスペースの「本当に売れる金額」を無料で査定します。</p>
+        <a href="contact.html?role=sell" target="_blank" rel="noopener" data-cta="sim-final">無料査定を依頼する（1分で完了）›</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="logo light" href="index.html"><span class="logo-mark"></span><span><strong>SpaceBaton</strong><small>あなたのスペース、次のオーナーへ。</small></span></a>
+        <nav class="footer-nav">
+          <a href="index.html#features">サービスの特徴</a>
+          <a href="listings.html">案件一覧</a>
+          <a href="simulator.html">査定シミュレーター</a>
+          <a href="column.html">コラム</a>
+          <a href="index.html#faq">よくある質問</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p><strong style="color:#fff">VMK Inc.</strong>　〒460-0022 愛知県名古屋市中区金山1丁目14-16 トキワビル5階</p>
+        <nav class="footer-legal">
+          <a href="privacy.html">プライバシーポリシー</a>
+          <a href="terms.html">特定商取引法に基づく表記</a>
+        </nav>
+        <small class="copy">© VMK Inc.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── モバイルメニュー ──
+    (function(){var t=document.getElementById('navToggle'),n=document.getElementById('primaryNav');if(t&&n){t.addEventListener('click',function(){var o=document.body.classList.toggle('nav-open');t.setAttribute('aria-expanded',o?'true':'false');});n.addEventListener('click',function(e){if(e.target.tagName==='A'){document.body.classList.remove('nav-open');t.setAttribute('aria-expanded','false');}});}})();
+
+    // ── 査定シミュレーター ──
+    (function(){
+      var $ = function(id){ return document.getElementById(id); };
+
+      // 数値取得（空欄は0）
+      function num(id){
+        var v = parseFloat($(id).value);
+        return isNaN(v) || v < 0 ? 0 : v;
+      }
+
+      // 倍率の加点要素（EBITDA 2.0〜3.0倍にクランプ）
+      function buildFactors(sales, rent){
+        var f = [];
+        var y = $('in-years').value;
+        f.push(y==='2' ? {label:'運営歴2年以上', add:0.30} : y==='1' ? {label:'運営歴1〜2年', add:0.15} : {label:'運営歴1年未満', add:0});
+        if(sales > 0){
+          var ratio = rent / sales;
+          if(ratio <= 0.3) f.push({label:'家賃比率 '+Math.round(ratio*100)+'%（健全）', add:0.25});
+          else if(ratio <= 0.5) f.push({label:'家賃比率 '+Math.round(ratio*100)+'%', add:0.10});
+          else f.push({label:'家賃比率 '+Math.round(ratio*100)+'%（高め）', add:0});
+        }
+        var l = $('in-loc').value;
+        f.push(l==='2' ? {label:'駅徒歩5分以内', add:0.20} : l==='1' ? {label:'駅徒歩10分以内', add:0.10} : {label:'駅徒歩10分超', add:0});
+        var k = $('in-keiyaku').value;
+        f.push(k==='2' ? {label:'自己所有物件', add:0.25} : k==='1' ? {label:'契約承継の見込みあり', add:0.15} : {label:'契約承継は未確認', add:0});
+        var o = $('in-ops').value;
+        f.push(o==='2' ? {label:'無人化・仕組み化済み', add:0.20} : o==='1' ? {label:'一部無人運営', add:0.10} : {label:'常時自己運営', add:0});
+        return f;
+      }
+
+      function fmt(n){ return Math.round(n).toLocaleString('ja-JP'); }
+
+      // カウントアップ演出
+      function countUp(el, to){
+        var from = 0, t0 = null, dur = 700;
+        function step(ts){
+          if(!t0) t0 = ts;
+          var p = Math.min((ts - t0) / dur, 1);
+          p = 1 - Math.pow(1 - p, 3); // ease-out
+          el.textContent = fmt(from + (to - from) * p);
+          if(p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+
+      function calc(scrollToResult){
+        var sales = num('in-sales'), rent = num('in-rent'), cost = num('in-cost'), asset = num('in-asset');
+        var err = $('simErr');
+        // 売上未入力はエラー（家賃は0許容だが未入力チェックのため値そのものを見る）
+        if($('in-sales').value === ''){ err.style.display='block'; return; }
+        err.style.display='none';
+
+        var monthly = sales - rent - cost;          // 月間営業利益
+        var ebitda = monthly * 12;                  // 年間EBITDA
+        var factors = buildFactors(sales, rent);
+        var mult = 2.0;
+        factors.forEach(function(f){ mult += f.add; });
+        mult = Math.min(mult, 3.0);
+        var multLow = Math.max(2.0, mult - 0.25);
+        var multHigh = Math.min(3.0, mult + 0.10);
+
+        var low, high, bizLow, bizHigh;
+        var profitable = ebitda > 0;
+        if(profitable){
+          bizLow = ebitda * multLow; bizHigh = ebitda * multHigh;
+          low = bizLow + asset; high = bizHigh + asset;
+        } else {
+          // 利益ゼロ・赤字 → 動産ベースの評価
+          bizLow = 0; bizHigh = 0;
+          low = asset * 0.5; high = asset * 1.0;
+        }
+
+        // 表示
+        $('resEmpty').style.display = 'none';
+        $('resBody').style.display = 'block';
+        countUp($('amtLow'), low);
+        countUp($('amtHigh'), high);
+
+        if(profitable){
+          $('rangeCap').textContent = '概算売却額レンジ（営業利益×' + multLow.toFixed(2).replace(/0$/,'') + '〜' + multHigh.toFixed(2).replace(/0$/,'') + '倍＋動産）';
+          $('bizLabel').textContent = '事業価値（年間営業利益 ' + fmt(ebitda) + '万円 × 倍率）';
+          $('bizVal').textContent = fmt(bizLow) + '〜' + fmt(bizHigh) + '万円';
+        } else {
+          $('rangeCap').textContent = '概算売却額レンジ（動産価値ベース）';
+          $('bizLabel').textContent = '事業価値（現状の利益では算入なし）';
+          $('bizVal').textContent = '個別査定で評価';
+        }
+        $('assetVal').textContent = asset > 0 ? fmt(asset) + '万円' : '未入力';
+
+        // 内訳バー
+        var midBiz = (bizLow + bizHigh) / 2, total = midBiz + asset;
+        $('barBiz').style.width = total > 0 ? (midBiz / total * 100) + '%' : '0%';
+        $('barAsset').style.width = total > 0 ? (asset / total * 100) + '%' : '0%';
+
+        // 加点チップ
+        var chips = $('resChips'); chips.innerHTML = '';
+        if(profitable){
+          factors.forEach(function(f){
+            var s = document.createElement('span');
+            if(f.add > 0){ s.className = 'up'; s.textContent = '↑ ' + f.label + ' +' + f.add.toFixed(2).replace(/0$/,'') + '倍'; }
+            else { s.textContent = f.label; }
+            chips.appendChild(s);
+          });
+        } else {
+          var s = document.createElement('span');
+          s.className = 'up';
+          s.textContent = '💡 利益が出ていなくても、立地・契約条件・設備次第で上振れの可能性があります';
+          chips.appendChild(s);
+        }
+
+        // 相談フォームへの引き継ぎリンク
+        var biz = $('in-biz').value;
+        var params = new URLSearchParams({
+          role: 'sell', sim: '1',
+          biz: biz,
+          rev: String(Math.round(sales * 12)),
+          low: String(Math.round(low)),
+          high: String(Math.round(high))
+        });
+        $('resCta').href = 'contact.html?' + params.toString();
+
+        // 共有用URL（入力値をクエリに保存 → URLだけで再現可能）
+        var share = new URLSearchParams({
+          b: biz, s: String(sales), r: String(rent), c: String(cost), a: String(asset),
+          y: $('in-years').value, l: $('in-loc').value, k: $('in-keiyaku').value, o: $('in-ops').value
+        });
+        try{ history.replaceState(null, '', location.pathname + '?' + share.toString() + '#sim'); }catch(e){}
+
+        // GA4イベント（金額など数値のみ・個人情報なし）
+        try{ if(window.gtag) gtag('event', 'simulate_valuation', { sim_biz: biz, sim_profitable: profitable ? 'yes' : 'no' }); }catch(e){}
+
+        if(scrollToResult && window.matchMedia('(max-width: 920px)').matches){
+          $('resCard').scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      }
+
+      $('calcBtn').addEventListener('click', function(){ calc(true); });
+
+      // ── URLからの復元（共有リンクで開いたとき）──
+      (function restore(){
+        var p = new URLSearchParams(location.search);
+        if(!p.has('s')) return;
+        var map = { s:'in-sales', r:'in-rent', c:'in-cost', a:'in-asset', y:'in-years', l:'in-loc', k:'in-keiyaku', o:'in-ops', b:'in-biz' };
+        Object.keys(map).forEach(function(key){
+          var v = p.get(key);
+          if(v !== null && v !== '') $(map[key]).value = v;
+        });
+        calc(false);
+      })();
+
+      // ── 共有ボタン ──
+      $('copyBtn').addEventListener('click', function(){
+        var btn = this;
+        function ok(){ btn.textContent = '✓ コピーしました'; setTimeout(function(){ btn.textContent = '🔗 結果URLをコピー'; }, 1800); }
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(location.href).then(ok);
+        } else {
+          var ta = document.createElement('textarea'); ta.value = location.href; document.body.appendChild(ta); ta.select();
+          try{ document.execCommand('copy'); ok(); }catch(e){}
+          document.body.removeChild(ta);
+        }
+      });
+      $('shareBtn').addEventListener('click', function(){
+        if(navigator.share){
+          navigator.share({ title: 'スペース売却査定シミュレーター｜SpaceBaton', url: location.href }).catch(function(){});
+        } else {
+          $('copyBtn').click();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

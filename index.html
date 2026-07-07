@@ -123,26 +123,65 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "SpaceBaton（スペースバトン）",
-    "description": "レンタルスペース・民泊・貸し会議室・レンタルスタジオに特化したスモールM&A仲介サービス。完全成功報酬・登録無料。",
-    "url": "https://spacebaton.com/",
-    "image": "https://spacebaton.com/vmk-logo.jpg",
-    "slogan": "あなたのスペース、次のオーナーへ。",
-    "parentOrganization": {
-      "@type": "Organization",
-      "name": "VMK Inc."
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "postalCode": "460-0022",
-      "addressRegion": "愛知県",
-      "addressLocality": "名古屋市中区",
-      "streetAddress": "金山1丁目14-16 トキワビル5階",
-      "addressCountry": "JP"
-    },
-    "areaServed": ["東海", "関東", "日本"],
-    "priceRange": "成功報酬10%（最低10万円）"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://spacebaton.com/#organization",
+        "name": "SpaceBaton（スペースバトン）",
+        "alternateName": "SpaceBaton",
+        "url": "https://spacebaton.com/",
+        "logo": "https://spacebaton.com/og-image.png",
+        "image": "https://spacebaton.com/og-image.png",
+        "description": "レンタルスペース・民泊・貸し会議室・レンタルスタジオの事業譲渡（M&A）に特化したスモールM&A仲介サービス。自社でスペースを運営するVMK Inc.が運営し、査定・買い手探し・契約・引き継ぎまでを完全成功報酬（売れるまで0円）で支援する。",
+        "slogan": "あなたのスペース、次のオーナーへ。",
+        "knowsAbout": ["レンタルスペースのM&A", "レンタルスペースの売却", "レンタルスペースの譲渡", "事業譲渡", "貸し会議室のM&A", "民泊のM&A", "レンタルスタジオのM&A", "スペース事業の査定"],
+        "areaServed": ["日本", "東海", "関東", "関西"],
+        "sameAs": [
+          "https://x.com/tnkyudai_vmkceo",
+          "https://note.com/spacebaton"
+        ],
+        "founder": { "@id": "https://spacebaton.com/#founder" },
+        "parentOrganization": { "@type": "Organization", "name": "VMK Inc." },
+        "address": {
+          "@type": "PostalAddress",
+          "postalCode": "460-0022",
+          "addressRegion": "愛知県",
+          "addressLocality": "名古屋市中区",
+          "streetAddress": "金山1丁目14-16 トキワビル5階",
+          "addressCountry": "JP"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://spacebaton.com/#founder",
+        "name": "田中",
+        "jobTitle": "代表",
+        "worksFor": { "@id": "https://spacebaton.com/#organization" },
+        "description": "名古屋を拠点にレンタルスペースを複数運営し、実際に1店舗をM&Aで売却した経験を持つ。その実務知見をもとにスペース特化のM&A仲介SpaceBatonを立ち上げた。",
+        "sameAs": ["https://x.com/tnkyudai_vmkceo"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://spacebaton.com/#website",
+        "url": "https://spacebaton.com/",
+        "name": "SpaceBaton（スペースバトン）",
+        "publisher": { "@id": "https://spacebaton.com/#organization" },
+        "inLanguage": "ja"
+      },
+      {
+        "@type": "Service",
+        "name": "レンタルスペース特化のM&A仲介",
+        "serviceType": "スペース事業のM&A・事業譲渡仲介",
+        "provider": { "@id": "https://spacebaton.com/#organization" },
+        "areaServed": ["日本"],
+        "description": "レンタルスペース・民泊・貸し会議室・レンタルスタジオの売却・買収を仲介。完全成功報酬（売り手・買い手各10%・最低10万円）。登録・相談・査定は無料。",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "JPY",
+          "description": "完全成功報酬：成約額の10%（最低10万円）。登録・相談・掲載・査定は無料。"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -217,6 +256,7 @@
     <section class="section panel" id="features">
       <div class="container">
         <div class="section-title"><span>FEATURES</span><h2>SpaceBatonの特徴</h2></div>
+        <p style="text-align:center;max-width:780px;margin:0 auto 26px;color:var(--muted);font-weight:700;line-height:1.95;font-size:14.5px"><strong style="color:var(--text)">SpaceBaton（スペースバトン）</strong>は、レンタルスペース・民泊・貸し会議室・レンタルスタジオの<strong style="color:var(--text)">事業譲渡（M&amp;A）に特化したスモールM&amp;A仲介サービス</strong>です。自社でスペースを運営するVMK Inc.が手がけ、査定から買い手探し・契約・引き継ぎまでを<strong style="color:var(--text)">完全成功報酬（売れるまで0円）</strong>で伴走します。</p>
         <div class="features">
           <article><i>¥</i><h3>完全成功報酬制</h3><p>売り手・買い手ともに手数料は成功時のみ。登録・相談は無料です。</p></article>
           <article><i>10%</i><h3>明確な料金体系</h3><p>売り手・買い手各10%（最低10万円）の安心価格。</p></article>

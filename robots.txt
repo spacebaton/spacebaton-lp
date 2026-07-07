@@ -1,4 +1,53 @@
+# SpaceBaton（スペースバトン） robots.txt
+
+# 通常の検索エンジン・全ボット：全許可
 User-agent: *
+Allow: /
+
+# ── AI検索・アシスタント系クローラを明示的に許可（AI回答での引用・掲載を狙う）──
+# ChatGPT検索の引用に必要
+User-agent: OAI-SearchBot
+Allow: /
+
+# ChatGPTがユーザー操作で取得する際
+User-agent: ChatGPT-User
+Allow: /
+
+# OpenAIの学習用クローラ（学習利用も許可＝ブランド理解に寄与）
+User-agent: GPTBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google のAI（AI Overviews / Gemini）向け
+User-agent: Google-Extended
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Bing / Copilot
+User-agent: Bingbot
+Allow: /
+
+# Common Crawl（多くのLLMのデータ元）
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://spacebaton.com/sitemap.xml

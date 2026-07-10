@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>レンタルスペース売却準備チェックリスト【保存版】｜SpaceBaton</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#084cb4; --deep:#061b3d; --light:#f4f8ff; --text:#13264b;
+    --muted:#65718a; --line:#dfe8f6; --gold:#c9992a; --goldbg:#fff9e8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Noto Sans JP',sans-serif;color:var(--text);background:#e9eef7;line-height:1.8;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sheet{max-width:820px;margin:24px auto;background:#fff;box-shadow:0 10px 40px rgba(11,47,104,.12)}
+
+  /* ── 表紙ヘッダー ── */
+  .cover{background:linear-gradient(150deg,var(--deep) 0%,#0a2a63 55%,var(--blue) 130%);color:#fff;padding:44px 48px 38px;position:relative;overflow:hidden}
+  .cover::after{content:'';position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(255,211,77,.16),transparent 65%)}
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:26px}
+  .brand .mark{width:40px;height:40px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--blue);font-size:18px}
+  .brand b{font-size:19px;font-weight:900;letter-spacing:.5px}
+  .brand small{display:block;font-size:10.5px;font-weight:700;color:#9fc0f5;letter-spacing:2px}
+  .cover .tag{display:inline-block;background:#ffd34d;color:var(--deep);font-size:12px;font-weight:900;border-radius:999px;padding:5px 16px;margin-bottom:14px}
+  .cover h1{font-size:31px;font-weight:900;line-height:1.45;margin-bottom:12px}
+  .cover h1 em{font-style:normal;color:#ffd34d}
+  .cover p{font-size:13px;font-weight:700;color:rgba(255,255,255,.85);line-height:1.9;max-width:560px}
+  .cover .meta{margin-top:18px;font-size:11px;font-weight:800;color:#9fc0f5}
+
+  .inner{padding:40px 48px}
+
+  /* ── 導入・使い方 ── */
+  .howto{background:var(--light);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin-bottom:28px}
+  .howto b{display:block;font-size:13px;font-weight:900;color:var(--blue);margin-bottom:6px}
+  .howto p{font-size:12.5px;font-weight:600;color:#33415b}
+
+  /* ── 査定式 ── */
+  .formula{background:var(--goldbg);border:2px solid #e8c96a;border-radius:12px;padding:20px 22px;text-align:center;margin-bottom:8px}
+  .formula .fl{display:inline-block;background:var(--gold);color:#fff;font-size:11px;font-weight:900;border-radius:6px;padding:3px 10px;margin-bottom:10px}
+  .formula .fx{font-size:16.5px;font-weight:900;color:#2c2410;line-height:1.8}
+  .formula .fx span{color:var(--blue)}
+  .formula p{font-size:11.5px;font-weight:700;color:#7a6a35;margin-top:8px}
+  .formula-note{font-size:11px;color:var(--muted);font-weight:700;margin-bottom:28px;text-align:center}
+
+  /* ── ステップ ── */
+  .step{margin-bottom:30px;break-inside:avoid}
+  .step-head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .step-head .n{flex:0 0 auto;width:40px;height:40px;border-radius:12px;background:var(--blue);color:#fff;font-weight:900;font-size:17px;display:flex;align-items:center;justify-content:center}
+  .step-head h2{font-size:18px;font-weight:900;color:var(--text);line-height:1.4}
+  .step-head small{display:block;font-size:11px;font-weight:800;color:var(--muted)}
+  .step-why{font-size:12px;font-weight:700;color:var(--muted);margin:0 0 12px 52px;line-height:1.7}
+
+  .cl{margin-left:52px}
+  .ci{display:flex;gap:11px;align-items:flex-start;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .ci:last-child{border-bottom:none}
+  .box{flex:0 0 auto;width:17px;height:17px;border:2.2px solid var(--blue);border-radius:4px;margin-top:4px}
+  .ci .t{font-size:13px;font-weight:700;color:var(--text);line-height:1.7}
+  .ci .t small{display:block;font-size:11.5px;font-weight:600;color:var(--muted);margin-top:2px;line-height:1.65}
+  .ci .t .imp{color:#b23c1c;font-weight:900;font-size:10.5px;border:1px solid #e8b3a4;border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:1px}
+
+  /* ── プロのヒント ── */
+  .tip{margin:14px 0 0 52px;background:#f0f9f4;border:1px solid #bfe3cf;border-radius:10px;padding:12px 16px}
+  .tip b{font-size:11.5px;font-weight:900;color:#0a6e3f}
+  .tip p{font-size:12px;font-weight:600;color:#2c5741;line-height:1.75}
+
+  /* ── 落とし穴 ── */
+  .pitfall{background:#fff;border:2px solid #f0c9bd;border-radius:14px;padding:22px 26px;margin:6px 0 30px;break-inside:avoid}
+  .pitfall h2{font-size:16px;font-weight:900;color:#b23c1c;margin-bottom:12px}
+  .pitfall ul{list-style:none}
+  .pitfall li{font-size:12.5px;font-weight:700;color:#33415b;padding:7px 0 7px 26px;position:relative;border-bottom:1px dashed #f3ddd6;line-height:1.7}
+  .pitfall li:last-child{border-bottom:none}
+  .pitfall li::before{content:'⚠';position:absolute;left:0;color:#d97b5a}
+  .pitfall li b{color:#b23c1c}
+
+  /* ── スコア ── */
+  .score{background:var(--light);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:30px;break-inside:avoid}
+  .score h2{font-size:16px;font-weight:900;color:var(--text);margin-bottom:10px}
+  .score p{font-size:12.5px;font-weight:600;color:#33415b;margin-bottom:10px}
+  .score .rows{display:grid;gap:8px}
+  .score .r{display:flex;gap:10px;align-items:center;font-size:12.5px;font-weight:800}
+  .score .r i{font-style:normal;flex:0 0 auto;width:86px;text-align:center;border-radius:8px;padding:4px 0;font-size:12px;font-weight:900}
+  .r.g i{background:#e6f4ee;color:#0a6e3f}.r.y i{background:#fff4e0;color:#a86a12}.r.o i{background:#fdf1ee;color:#b23c1c}
+
+  /* ── CTA ── */
+  .cta{background:linear-gradient(160deg,var(--deep),#0a2a63);color:#fff;border-radius:16px;padding:30px 32px;text-align:center;break-inside:avoid}
+  .cta h2{font-size:19px;font-weight:900;margin-bottom:8px}
+  .cta p{font-size:12.5px;font-weight:700;opacity:.88;margin-bottom:16px;line-height:1.9}
+  .cta .links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+  .cta a{display:inline-block;text-decoration:none;font-size:13.5px;font-weight:900;border-radius:11px;padding:13px 26px}
+  .cta a.p{background:#ffd34d;color:var(--deep)}
+  .cta a.g{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+  .cta .url{font-size:11.5px;font-weight:800;color:#9fc0f5}
+
+  .foot{padding:18px 48px 26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+  .foot p{font-size:10.5px;color:var(--muted);font-weight:700;line-height:1.7}
+
+  /* ── 印刷 ── */
+  @page{size:A4;margin:0}
+  @media print{
+    body{background:#fff}
+    .sheet{max-width:none;margin:0;box-shadow:none}
+    .cover{padding:36px 42px 30px}
+    .inner{padding:30px 42px}
+    a{color:inherit}
+  }
+  @media(max-width:640px){
+    .cover{padding:30px 22px}
+    .inner{padding:26px 20px}
+    .cl,.step-why,.tip{margin-left:0}
+    .foot{padding:16px 20px 22px}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <!-- 表紙 -->
+  <header class="cover">
+    <div class="brand">
+      <div class="mark">SB</div>
+      <div><b>SpaceBaton</b><small>スペースバトン｜スペース特化のM&amp;A仲介</small></div>
+    </div>
+    <span class="tag">保存版・全31項目</span>
+    <h1>レンタルスペース<br><em>売却準備チェックリスト</em></h1>
+    <p>実際にレンタルスペースを複数運営し、自らの店舗を譲渡（M&A）まで完了させた運営者が、「売る前にやっておくと高く・早く売れること」を全部リスト化しました。上から順に✔を付けるだけで、買い手に信頼される"売れる準備"が整います。</p>
+    <div class="meta">発行：SpaceBaton（株式会社VMK）｜運営責任者・田中優大｜2026年7月版</div>
+  </header>
+
+  <div class="inner">
+
+    <!-- 使い方 -->
+    <div class="howto">
+      <b>■ このリストの使い方</b>
+      <p>売却の成否は、活動を始める前の「準備」で9割決まります。STEP1〜6を順にチェックしてください。すべて埋まらなくても大丈夫。<strong>空欄が残った項目＝あなたの査定額を下げている箇所</strong>なので、それが分かるだけでも前進です。</p>
+    </div>
+
+    <!-- 査定式 -->
+    <div class="formula">
+      <span class="fl">大前提：売却額の目安</span>
+      <div class="fx">補正した年間利益（EBITDA）× <span>2〜3倍</span> ＋ 設備・什器の時価</div>
+      <p>1室規模なら数十万〜300万円台が中心。倍率は「運営歴・家賃比率・立地・契約の承継しやすさ・仕組み化」で上下します。</p>
+    </div>
+    <p class="formula-note">▶ 自分の店の概算は spacebaton.com/simulator で1分で出せます（登録不要）</p>
+
+    <!-- STEP 1 -->
+    <section class="step">
+      <div class="step-head"><div class="n">1</div><h2>数字を1枚にまとめる<small>買い手が最初に見る資料。ここの完成度＝信頼度</small></h2></div>
+      <p class="step-why">なぜ重要？——買い手が本当に知りたいのは「自分の口座に毎月いくら残るか」。手残りまで見せられる売り手は、それだけで信頼されます。</p>
+      <div class="cl">
+        <div class="ci"><span class="box"></span><div class="t">直近12ヶ月の「月別売上」を一覧にした<small>直近6ヶ月しかなければ6ヶ月でも可。月ごとの波が見えることが大事</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">予約サイトごとの売上比率・手数料率を出した<small>例：Instabase◯%／スペースマーケット◯%。手数料控除後の「入金ベース」で</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">家賃・光熱費・清掃費・通信費など月間経費を一覧にした</div></div>
+        <div class="ci"><span class="box"></span><div class="t">「売上 − 手数料 − 家賃 − 経費 ＝ 月間の手残り」まで計算した<span class="imp">最重要</span><small>この1行が言えるかどうかで、買い手の反応が変わります</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">一時的な特殊要因（開業月・臨時出費など）に注記を付けた<small>“補正後の実力値”が分かる状態＝EBITDAの補正</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">繁忙月（12月など）と平常月を分けて説明できるようにした<small>繁忙月だけの数字で語ると、買い手審査（DD）で崩れます</small></div></div>
+      </div>
+      <div class="tip"><b>💡 プロのひとこと</b><p>数字は「盛らない」が鉄則。弱い月も含めて正直に出す売り手のほうが、結果的に高く・早く成約しています。開示した数字は後の契約（表明保証）で保証する対象になります。</p></div>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="step">
+      <div class="step-head"><div class="n">2</div><h2>資産目録をつくる<small>利益が薄くても「現物」に値段がつく</small></h2></div>
+      <p class="step-why">なぜ重要？——売却額の土台のひとつが動産（設備・什器）の時価。目録があるだけで「価格の根拠」が生まれ、利益が薄い店でも売れる理由になります。</p>
+      <div class="cl">
+        <div class="ci"><span class="box"></span><div class="t">家具・家電・設備・機材を1品ずつリスト化した<small>照明、プロジェクター、キッチン用品、鍵システム、防犯カメラまで漏れなく</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">各品に「購入時期・購入額」を記入した<small>領収書が無ければ概算でOK。分かる範囲で誠実に</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">現在の時価を付けた（目安＝購入額の3〜5割）<small>中古相場で保守的に。盛らないほうが後の交渉が速い</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">「持って出せる動産」と「内装造作」を分けた<small>買い手が引き継げるのは前者。ここを分けてある目録は信頼されます</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">スペースの現況写真を撮った（全体・水回り・設備）<small>掲載にも内見準備にも使えます。明るい時間帯に</small></div></div>
+      </div>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="step">
+      <div class="step-head"><div class="n">3</div><h2>契約まわりを確認する<small>ここが引き継げないと譲渡そのものが止まる</small></h2></div>
+      <p class="step-why">なぜ重要？——賃貸物件の売却は「賃貸借契約を買い手が引き継げるか」が生命線。早めに確認した人から順に、話が速く進みます。</p>
+      <div class="cl">
+        <div class="ci"><span class="box"></span><div class="t">賃貸借契約書を手元に用意した（契約期間・更新条件・用途）</div></div>
+        <div class="ci"><span class="box"></span><div class="t">名義変更（承継）の可否を貸主・管理会社に確認した<span class="imp">最重要</span><small>「検討中の段階ですが…」の相談でOK。承諾見込みがあるだけで買い手の不安が消えます</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">保証金（敷金）の額と、返還・引き継ぎの扱いを確認した<small>名義変更で引き継げると、買い手は保証金の入れ直しが不要でスムーズ</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">原状回復の範囲・解約予告期間を把握した<small>「畳んだ場合のコスト」が分かる＝売却と比較する判断材料になります</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">転貸（また貸し）や事業用利用の許可状況を確認した</div></div>
+      </div>
+      <div class="tip"><b>💡 プロのひとこと</b><p>「貸主にどう切り出せばいいか分からない」——ここでつまずく方が一番多いです。切り出し方や交渉は仲介がサポートできる領域なので、確認前でも相談して大丈夫です。</p></div>
+    </section>
+
+    <!-- STEP 4 -->
+    <section class="step">
+      <div class="step-head"><div class="n">4</div><h2>予約サイト・運営の引き継ぎ準備<small>レビューは“お金では買えない資産”</small></h2></div>
+      <p class="step-why">なぜ重要？——買い手が欲しいのは「明日から回る状態」。レビュー・リピーター・運営の仕組みを引き継げる店は、それだけで高く評価されます。</p>
+      <div class="cl">
+        <div class="ci"><span class="box"></span><div class="t">利用中の予約サイトを一覧にした（掲載名・レビュー数・評点）</div></div>
+        <div class="ci"><span class="box"></span><div class="t">各サイトの「引き継ぎ可否」を確認した<small>例：Instabaseはレビュー・お気に入りを引き継ぎ可／スペースマーケットは不可。可否で価格の考え方が変わります</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">運営マニュアルを1枚にまとめた（清掃・鍵・トラブル対応）<small>「オーナーが変わっても回る」ことの証明。無人運営なら特に強い武器</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">鍵の管理方法（キーボックス等）と暗証番号の変更手順を整理した</div></div>
+        <div class="ci"><span class="box"></span><div class="t">清掃の体制（外注先・頻度・費用）を説明できるようにした<small>清掃スタッフが継続してくれるなら、買い手には即戦力になります</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">直近の予約状況・キャンセル率を確認した<small>切替後1ヶ月は旧予約の消化で協力が必要になります（契約時に分担を決める）</small></div></div>
+      </div>
+    </section>
+
+    <!-- STEP 5 -->
+    <section class="step">
+      <div class="step-head"><div class="n">5</div><h2>開示・掲載の準備<small>正直さが、いちばん高く売る戦略</small></h2></div>
+      <p class="step-why">なぜ重要？——盛った資料は買い手審査（DD）で必ず崩れ、信頼ごと失います。弱点まで正直に書く売り手のほうが、話が速い。</p>
+      <div class="cl">
+        <div class="ci"><span class="box"></span><div class="t">スペースの強みを3つ、具体的に書き出した<small>例：「駅近で夜間需要が強い」「リピーター比率が高い」「無人運営で手離れが良い」</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">弱点・改善余地も正直に書き出した<small>例：「平日昼の稼働が弱い」。改善案とセットで書くと前向きに伝わります</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">売却理由を一言で説明できるようにした<small>「選択と集中」「本業への集中」など。理由が明確だと買い手は安心します</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">屋号・住所を伏せた「匿名の概要」を用意した<small>営業を続けながら売るなら必須。詳細はNDA（秘密保持契約）締結後に開示する運用に</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">希望価格と「最低ライン」を自分の中で決めた<small>査定式（表紙下）で理論値を出し、早期売却なら理論値よりやや下に</small></div></div>
+      </div>
+    </section>
+
+    <!-- STEP 6 -->
+    <section class="step">
+      <div class="step-head"><div class="n">6</div><h2>売る前の磨き込み（余裕があれば）<small>1〜2ヶ月で査定が変わる打ち手</small></h2></div>
+      <p class="step-why">なぜ重要？——査定の倍率（2倍寄りか3倍寄りか）は、売る直前の状態でも動きます。時間があるなら、この4つが効きます。</p>
+      <div class="cl">
+        <div class="ci"><span class="box"></span><div class="t">直近のレビューを増やす取り組みをした<small>利用後のレビュー依頼を仕組み化。新しい★は「今も生きている店」の証明</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">無人運営の仕組みを整えた（鍵・清掃・案内文の自動化）<small>「誰でも運営できる」状態は買い手層を一気に広げます</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">家賃比率を確認した（家賃は売上の3割以内・純売上の半分以内が健全）<small>ここが重い店は、集客より先に「売り時」の判断材料に</small></div></div>
+        <div class="ci"><span class="box"></span><div class="t">写真・掲載文をリフレッシュした<small>売却掲載にもそのまま使え、直近売上の底上げにもなる一石二鳥</small></div></div>
+      </div>
+    </section>
+
+    <!-- 落とし穴 -->
+    <div class="pitfall">
+      <h2>⚠ よくある5つのつまずき（先に知っておけば防げます）</h2>
+      <ul>
+        <li><b>数字を盛る</b>——DDで必ず崩れて、価格どころか信頼を失う。正直が最短。</li>
+        <li><b>貸主への確認を後回しにする</b>——承諾が取れず、話がまとまった後に白紙になるケースの筆頭。</li>
+        <li><b>繁忙月の数字だけで値付けする</b>——買い手は平常月と通年で見ます。</li>
+        <li><b>予約サイトの引き継ぎ可否を調べていない</b>——レビューが引き継げるかで価値が大きく変わります。</li>
+        <li><b>稼働が落ちてから動き出す</b>——いちばん高く売れるのは「数字が良いうち」。出口は好調時に設計するもの。</li>
+      </ul>
+    </div>
+
+    <!-- スコア -->
+    <div class="score">
+      <h2>✔ チェック結果の目安（全31項目）</h2>
+      <p>付いた✔の数で、いまの「売れる準備度」がざっくり分かります。</p>
+      <div class="rows">
+        <div class="r g"><i>25個以上</i><span>準備上級。すぐに売却活動を始められる状態です。あとは価格戦略だけ。</span></div>
+        <div class="r y"><i>15〜24個</i><span>あと一歩。空欄のSTEP（特に1と3）を埋めれば、査定も交渉も強くなります。</span></div>
+        <div class="r o"><i>14個以下</i><span>伸びしろ大。逆に言えば、埋めるほど売却額が上がる余地があるということ。1人で全部やる必要はありません。</span></div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+      <h2>空欄があっても、そのまま相談できます。</h2>
+      <p>このリストは「完璧にしてから相談するため」のものではありません。<br>どこで止まっているかが分かれば、そこからは私たちが一緒に埋めます。査定・相談は無料、完全成功報酬（売れるまで0円）です。</p>
+      <div class="links">
+        <a class="p" href="https://spacebaton.com/simulator">1分でわかる査定シミュレーター</a>
+        <a class="g" href="https://spacebaton.com/contact?role=sell">無料で相談する</a>
+      </div>
+      <div class="url">spacebaton.com</div>
+    </div>
+
+  </div>
+
+  <div class="foot">
+    <p>© VMK Inc.（株式会社VMK）｜SpaceBaton（スペースバトン）｜愛知県名古屋市中区金山1丁目14-16 トキワビル5階<br>本資料は一般的な情報提供を目的としたものです。税務・法務の個別判断は専門家にご確認ください。無断転載はご遠慮ください（個人利用・社内共有は歓迎です）。</p>
+  </div>
+
+</div>
+</body>
+</html>

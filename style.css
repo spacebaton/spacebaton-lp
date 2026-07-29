@@ -31,6 +31,12 @@ body.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-4
 .company-msg strong{color:var(--blue)}
 .company-sign{margin-top:10px !important;font-size:12px;color:var(--muted);font-weight:800}
 
+/* 運営会社ロゴパネル（中央セル：空箱→意図されたブランドパネル） */
+.office{min-height:210px;border:1px solid var(--line) !important;border-radius:12px;background:linear-gradient(160deg,#fff 0%,#eef5ff 100%) !important;box-shadow:0 6px 15px rgba(12,40,90,.06);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:34px 28px;text-align:center}
+.office img{width:min(190px,62%);height:auto;display:block;margin:0}
+.office-tag{color:var(--blue);font-weight:900;font-size:15px;letter-spacing:.01em;padding-top:20px;border-top:1px solid var(--line);width:100%;max-width:210px}
+.office-cap{margin:0;color:#4f5e76;font-weight:800;font-size:12.5px;line-height:1.95}
+
 /* フッター法務リンク */
 .footer-legal{display:flex;gap:18px;flex-wrap:wrap}
 .footer-legal a{font-size:12px;font-weight:700;color:rgba(255,255,255,.7)}

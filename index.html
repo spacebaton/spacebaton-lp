@@ -141,6 +141,14 @@
           "https://note.com/renspace_tanaka"
         ],
         "founder": { "@id": "https://spacebaton.com/#founder" },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "url": "https://spacebaton.com/contact",
+          "email": "info@spacebaton.com",
+          "availableLanguage": "ja",
+          "areaServed": "JP"
+        },
         "parentOrganization": {
           "@type": "Organization",
           "name": "VMK Inc.",
@@ -188,6 +196,23 @@
           "priceCurrency": "JPY",
           "description": "完全成功報酬：成約額の10%（最低10万円）。登録・相談・掲載・査定は無料。"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://spacebaton.com/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "登録・相談は本当に無料ですか？", "acceptedAnswer": { "@type": "Answer", "text": "はい、完全無料です。売り手・買い手ともに、登録・掲載・相談・マッチングまですべて費用はかかりません。手数料は売買が成立した場合のみ発生します。" } },
+          { "@type": "Question", "name": "手数料はいくらですか？", "acceptedAnswer": { "@type": "Answer", "text": "売り手・買い手それぞれ、成約金額の10%（最低10万円）をいただいています。成功報酬制のため、成約しなかった場合は一切費用は発生しません。" } },
+          { "@type": "Question", "name": "売却価格はどうやって決まりますか？", "acceptedAnswer": { "@type": "Answer", "text": "目安は「補正した年間利益（EBITDA）×2〜3倍＋設備・什器の時価」です。立地・稼働率・設備・運営の仕組み化など複数の要素を加味して算出し、初回のヒアリング後に簡易査定をお伝えします。登録不要の査定シミュレーターで概算も確認できます。" } },
+          { "@type": "Question", "name": "どんなスペースが売却・買収の対象ですか？", "acceptedAnswer": { "@type": "Answer", "text": "レンタルスペース・民泊（簡易宿所）・貸し会議室・レンタルスタジオが主な対象です。月商10万円台の小規模な物件から複数室の運営案件まで幅広く対応しています。" } },
+          { "@type": "Question", "name": "民泊・簡易宿所（旅館業）の売却にも対応していますか？", "acceptedAnswer": { "@type": "Answer", "text": "対応しています。民泊は許可・届出が営業者ごとのため、買い手が新たに取得し直すのが原則です。賃貸物件の場合は貸主の承諾も鍵になります。私たち自身も民泊を運営しているため、許可・貸主承諾・引き継ぎの段取りまで実務目線で伴走します。" } },
+          { "@type": "Question", "name": "対応エリアはどこですか？", "acceptedAnswer": { "@type": "Answer", "text": "全国対応です。東海（名古屋）・関東・関西の案件が中心ですが、面談はオンラインで完結するため、その他の地域からのご相談も受け付けています。" } },
+          { "@type": "Question", "name": "問い合わせ後はどのように進みますか？", "acceptedAnswer": { "@type": "Answer", "text": "フォーム送信後すぐに確認メールが届き、30分の無料オンライン面談を予約できます。面談でヒアリングと簡易査定を行い、売却・購入の進め方をご提案します。まだ決めていない段階の相談も歓迎です。" } },
+          { "@type": "Question", "name": "情報が外部に漏れることはありませんか？", "acceptedAnswer": { "@type": "Answer", "text": "売却意向や事業情報は厳重に管理し、候補となる買い手にのみ、秘密保持契約（NDA）締結後に開示します。氏名・物件名・売上などの具体的な情報が不特定多数に知られることはありません。" } },
+          { "@type": "Question", "name": "屋号や場所を公開せずに「非公開」で売却できますか？", "acceptedAnswer": { "@type": "Answer", "text": "可能です。サイトへの掲載はせず、条件（業態・エリア・概算収支など）だけを提示して、水面下で買い手候補に打診する進め方があります。営業を続けながら、利用者・従業員・貸主に知られずに売却活動ができます。" } },
+          { "@type": "Question", "name": "買い手として案件を探したい場合は？", "acceptedAnswer": { "@type": "Answer", "text": "フォームから希望の業態・エリア・予算をお知らせください。公開案件のご紹介に加え、非公開案件の中から条件に合う物件をご提案します。個人・副業の方も歓迎で、買い手の手数料も成約時のみ（10%・最低10万円）です。" } },
+          { "@type": "Question", "name": "引き継ぎのサポートはありますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。契約締結後の引き継ぎ期間中も、運営マニュアルの整備・予約プラットフォームのアカウント移行・スタッフ紹介など、スムーズな引き渡しをサポートします。" } }
+        ]
       }
     ]
   }
@@ -314,10 +339,10 @@
       <div class="container panel">
         <div class="section-title"><span>TARGET</span><h2>対象スペース</h2></div>
         <div class="target-cards">
-          <article><div class="mini room-a"></div><h3>レンタルスペース</h3><p>パーティー・撮影・イベントなど多目的なスペース</p></article>
-          <article><div class="mini room-b"></div><h3>民泊・簡易宿所</h3><p>住宅宿泊事業・民泊運営物件など</p></article>
-          <article><div class="mini room-d"></div><h3>貸し会議室</h3><p>会議・研修・セミナー向けスペース</p></article>
-          <article><div class="mini room-c"></div><h3>レンタルスタジオ</h3><p>ダンス・ヨガ・撮影スタジオなど</p></article>
+          <article><div class="mini room-a"></div><h3>レンタルスペース</h3><p>パーティー・撮影・イベントなど多目的なスペース<br><a href="rental-space-transfer.html" style="color:var(--blue);font-weight:900">譲渡ガイドを見る →</a></p></article>
+          <article><div class="mini room-b"></div><h3>民泊・簡易宿所</h3><p>住宅宿泊事業・簡易宿所（旅館業）の運営物件<br><a href="minpaku-sale.html" style="color:var(--blue);font-weight:900">民泊の売却ガイド →</a></p></article>
+          <article><div class="mini room-d"></div><h3>貸し会議室</h3><p>会議・研修・セミナー向けスペース<br><a href="meeting-room-sale.html" style="color:var(--blue);font-weight:900">貸し会議室の売却ガイド →</a></p></article>
+          <article><div class="mini room-c"></div><h3>レンタルスタジオ</h3><p>ダンス・ヨガ・撮影スタジオなど<br><a href="studio-sale.html" style="color:var(--blue);font-weight:900">スタジオの売却ガイド →</a></p></article>
           <article><div class="mini room-e"></div><h3>自習室</h3><p>コワーキング・自習・集中作業向けスペース</p></article>
           <article><div class="mini room-b"></div><h3>レンタルサロン</h3><p>ネイル・エステ・まつげ・施術向けサロン</p></article>
         </div>
@@ -348,11 +373,23 @@
           </details>
           <details class="faq-item">
             <summary class="faq-q">売却価格はどうやって決まりますか？</summary>
-            <div class="faq-a">月間純利益をベースに年間換算し、スペースの立地・稼働率・設備・運営の仕組み化など複数の要素を加味して算出します。初回のヒアリング後に簡易査定をお伝えします。相場や流れの詳しい解説は<a href="rental-space-transfer.html" style="color:var(--blue);font-weight:900">「レンタルスペースの譲渡ガイド」</a>をご覧ください。</div>
+            <div class="faq-a">目安は「補正した年間利益（EBITDA）×2〜3倍＋設備・什器の時価」です。立地・稼働率・設備・運営の仕組み化など複数の要素を加味して算出し、初回のヒアリング後に簡易査定をお伝えします。<a href="simulator.html" style="color:var(--blue);font-weight:900">登録不要の査定シミュレーター</a>で概算も確認できます。相場や流れの詳しい解説は<a href="rental-space-transfer.html" style="color:var(--blue);font-weight:900">「レンタルスペースの譲渡ガイド」</a>をご覧ください。</div>
           </details>
           <details class="faq-item">
             <summary class="faq-q">どんなスペースが売却・買収の対象ですか？</summary>
-            <div class="faq-a">レンタルスペース・民泊（簡易宿所）・貸し会議室・レンタルスタジオが主な対象です。月商10万円台の小規模な物件から複数室の運営案件まで幅広く対応しています。まずはご相談ください。</div>
+            <div class="faq-a">レンタルスペース・民泊（簡易宿所）・貸し会議室・レンタルスタジオが主な対象です。月商10万円台の小規模な物件から複数室の運営案件まで幅広く対応しています。業態別のポイントは<a href="minpaku-sale.html" style="color:var(--blue);font-weight:900">民泊</a>・<a href="meeting-room-sale.html" style="color:var(--blue);font-weight:900">貸し会議室</a>・<a href="studio-sale.html" style="color:var(--blue);font-weight:900">スタジオ</a>の各ガイドにまとめています。</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">民泊・簡易宿所（旅館業）の売却にも対応していますか？</summary>
+            <div class="faq-a">対応しています。民泊は許可・届出が営業者ごとのため、買い手が新たに取得し直すのが原則です。賃貸物件の場合は貸主の承諾も鍵になります。私たち自身も民泊を運営しているため、許可・貸主承諾・引き継ぎの段取りまで実務目線で伴走します。詳しくは<a href="minpaku-sale.html" style="color:var(--blue);font-weight:900">「民泊・簡易宿所の売却ガイド」</a>へ。</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">対応エリアはどこですか？</summary>
+            <div class="faq-a">全国対応です。東海（名古屋）・関東・関西の案件が中心ですが、面談はオンラインで完結するため、その他の地域からのご相談も受け付けています。</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">問い合わせ後はどのように進みますか？</summary>
+            <div class="faq-a">フォーム送信後すぐに確認メールが届き、30分の無料オンライン面談を予約できます。面談でヒアリングと簡易査定を行い、売却・購入の進め方をご提案します。まだ決めていない段階の相談も歓迎です。<a href="contact.html?role=sell" style="color:var(--blue);font-weight:900">無料査定・相談フォームへ →</a></div>
           </details>
           <details class="faq-item">
             <summary class="faq-q">情報が外部に漏れることはありませんか？</summary>
@@ -364,7 +401,7 @@
           </details>
           <details class="faq-item">
             <summary class="faq-q">買い手として案件を探したい場合は？</summary>
-            <div class="faq-a">フォームからご希望の条件（業態・エリア・予算など）をお知らせください。公開案件のご紹介に加え、非公開案件の中から条件に合う物件をご提案します。</div>
+            <div class="faq-a">フォームから希望の業態・エリア・予算をお知らせください。公開案件のご紹介に加え、非公開案件の中から条件に合う物件をご提案します。個人・副業の方も歓迎で、買い手の手数料も成約時のみ（10%・最低10万円）です。買う前に見るべき数字は<a href="buy.html" style="color:var(--blue);font-weight:900">「買い手向けガイド」</a>にまとめています。</div>
           </details>
           <details class="faq-item">
             <summary class="faq-q">引き継ぎのサポートはありますか？</summary>
@@ -386,6 +423,8 @@
           <a href="#target">対象スペース</a>
           <a href="simulator.html">査定シミュレーター</a>
           <a href="column.html">コラム</a>
+          <a href="rental-space-ma.html">M&amp;Aガイド</a>
+          <a href="buy.html">買いたい方へ</a>
           <a href="about.html">運営者・会社概要</a>
           <a href="#faq">よくある質問</a>
         </nav>

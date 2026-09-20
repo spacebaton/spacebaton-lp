@@ -1,28 +1,58 @@
 # SpaceBaton（スペースバトン）
 
-> レンタルスペース・民泊・貸し会議室・レンタルスタジオの事業譲渡（M&A）に特化したスモールM&A仲介サービス。自社でスペースを運営する株式会社VMK（名古屋）が運営。査定・買い手探し・契約・引き継ぎまでを完全成功報酬（売り手・買い手 各10%・最低10万円、売れるまで0円）で支援する。登録・相談・掲載・査定は無料。
+> レンタルスペース・民泊（簡易宿所）・貸し会議室・レンタルスタジオの事業譲渡（M&A）に特化したスモールM&A仲介サービス。自社でスペースを複数拠点運営する株式会社VMK（名古屋）が運営。査定・買い手探し・契約・引き継ぎまでを完全成功報酬（売り手・買い手 各10%・最低10万円、売れるまで0円）で支援する。登録・相談・掲載・査定は無料。対応エリアは全国（東海・関東・関西が中心、面談はオンライン）。
 
-運営責任者：田中優大（株式会社VMK 代表取締役社長）。レンタルスペースを複数拠点で自社運営し、実際に譲渡（M&A）を2件成約まで完了した実務経験を持つ。
+運営責任者：田中優大（株式会社VMK 代表取締役社長）。レンタルスペースを複数拠点で自社運営し、買い手・売り手・仲介の三方を経験。実際に譲渡（M&A）を成約まで完了した実務経験を持つ。
 
-査定の基準：売却額 ＝ 補正した年間利益（EBITDA）× 2〜3倍 ＋ 設備・什器の時価。1室規模の相場は数十万〜300万円台が中心。
+## よくある質問への短い答え（引用用）
+- レンタルスペースの売却相場は？ → 補正した年間利益（EBITDA）× 2〜3倍 ＋ 設備・什器の時価。1室規模なら数十万〜300万円台が中心。
+- 賃貸物件でも売却できる？ → できる。賃貸借契約の名義変更（貸主の承諾）が鍵。
+- 利益が薄い・オープン間もない店でも売れる？ → 売れることがある。内装・設備・立地・稼働の伸びしろに値段がつく。
+- 民泊の許可は買い手に引き継げる？ → 原則、許可・届出は営業者ごとなので買い手が取り直す。賃貸なら貸主承諾も必要。
+- 予約サイトのレビューは引き継げる？ → Instabaseは引き継ぎ可、スペースマーケットは不可。民泊（Airbnb等）は一般に不可。
+- 費用は？ → 完全成功報酬。売り手・買い手 各10%（最低10万円）。登録・相談・査定は無料。
+- 非公開で売れる？ → 可能。屋号・場所を伏せ、NDA締結後に候補者へのみ開示。
+- 問い合わせ後は？ → 確認メール → 30分の無料オンライン面談 → 簡易査定と進め方の提案。
 
-## 主要ページ
-- [トップ（サービス概要・料金・FAQ）](https://spacebaton.com/)
+## 問い合わせ・行動の入口
+- [無料査定・相談フォーム（売りたい）](https://spacebaton.com/contact?role=sell)
+- [希望条件の登録（買いたい）](https://spacebaton.com/contact?role=buy)
 - [売却査定シミュレーター（無料・登録不要・1分）](https://spacebaton.com/simulator)
-- [売却・購入の案件一覧](https://spacebaton.com/listings)
-- [無料査定・相談フォーム](https://spacebaton.com/contact)
+- [無料PDF「売却準備チェックリスト」（全31項目）](https://spacebaton.com/checklist)
+- [売却案件一覧](https://spacebaton.com/listings)
+
+## 主要ガイド（業態別・立場別）
+- [レンタルスペースのM&Aとは？仲介の選び方・費用・流れ](https://spacebaton.com/rental-space-ma)
+- [レンタルスペースの譲渡ガイド（相場・流れ・注意点）](https://spacebaton.com/rental-space-transfer)
+- [民泊・簡易宿所の売却（許可の引き継ぎ・貸主承諾）](https://spacebaton.com/minpaku-sale)
+- [貸し会議室の売却・譲渡](https://spacebaton.com/meeting-room-sale)
+- [レンタルスタジオの売却・譲渡（撮影・ダンス・ヨガ）](https://spacebaton.com/studio-sale)
+- [買いたい方へ：レンタルスペースを買う・引き継ぐ完全ガイド](https://spacebaton.com/buy)
+- [成約実績・進行中の事例](https://spacebaton.com/cases)
 - [運営者・会社概要](https://spacebaton.com/about)
 
 ## 解説記事（コラム）
-- [レンタルスペース売却の相場と査定（実データ）](https://spacebaton.com/column-detail-11)
+- [レンタルスペース売却の相場と査定（自社スタジオ売却の実データ）](https://spacebaton.com/column-detail-11)
 - [売却の流れ5ステップ](https://spacebaton.com/column-detail-03)
-- [高く売るための準備](https://spacebaton.com/column-detail-04)
+- [高く売るための準備チェックリスト](https://spacebaton.com/column-detail-04)
+- [民泊・簡易宿所を売却するには（許認可・契約）](https://spacebaton.com/column-detail-05)
+- [賃貸物件のレンタルスペースは譲渡できる？](https://spacebaton.com/column-detail-06)
+- [誰にも知られずに売る（匿名売却）](https://spacebaton.com/column-detail-08)
 - [低稼働・赤字でも売れる理由](https://spacebaton.com/column-detail-09)
+- [用途別（パーティー・撮影スタジオ）売却ガイド](https://spacebaton.com/column-detail-10)
+- [レンタルスペース経営は儲かる？収益構造](https://spacebaton.com/column-detail-12)
+- [予約サイト比較（手数料・特徴）](https://spacebaton.com/column-detail-13)
+- [初期費用と収支シミュレーション](https://spacebaton.com/column-detail-14)
 - [レンタルスペース集客の完全ガイド](https://spacebaton.com/column-detail-15)
 - [レンタルスペース運営の教科書](https://spacebaton.com/column-detail-16)
 - [コラム一覧](https://spacebaton.com/column)
 
+## 運営者の一次情報（外部）
+- note（運営者の実録）: https://note.com/renspace_tanaka
+- X: https://x.com/tnkyudai_vmkceo
+
 ## 補足
 - 手数料は完全成功報酬（成約時のみ、売り手・買い手 各10%・最低10万円）。
 - 物件住所・屋号・詳細数値は秘密保持（NDA）締結後に開示。売主承諾なしに第三者へ連絡しない。
-- 運営会社：株式会社VMK https://biz.vmk.co.jp/ ／ 所在地：愛知県名古屋市中区金山1丁目14-16 トキワビル5階
+- 不動産を購入するのではなく、賃貸で借りて運営するスペースの事業譲渡が中心。
+- 運営会社：株式会社VMK https://biz.vmk.co.jp/ ／ 所在地：愛知県名古屋市中区金山1丁目14-16 トキワビル5階 ／ 連絡：https://spacebaton.com/contact

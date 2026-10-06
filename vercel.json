@@ -4,17 +4,69 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "spacebaton-lp.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "spacebaton-lp.vercel.app"
+        }
+      ],
       "destination": "https://spacebaton.com/:path*",
       "permanent": true
     },
-    { "source": "/column-detail", "destination": "/rental-space-ma", "permanent": true },
-    { "source": "/column-detail.html", "destination": "/rental-space-ma", "permanent": true },
-    { "source": "/column-detail-03", "destination": "/rental-space-transfer", "permanent": true },
-    { "source": "/column-detail-03.html", "destination": "/rental-space-transfer", "permanent": true },
-    { "source": "/column-detail-05", "destination": "/minpaku-sale", "permanent": true },
-    { "source": "/column-detail-05.html", "destination": "/minpaku-sale", "permanent": true },
-    { "source": "/column-detail-10", "destination": "/studio-sale", "permanent": true },
-    { "source": "/column-detail-10.html", "destination": "/studio-sale", "permanent": true }
+    {
+      "source": "/column-detail",
+      "destination": "/rental-space-ma",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail.html",
+      "destination": "/rental-space-ma",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-03",
+      "destination": "/rental-space-transfer",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-03.html",
+      "destination": "/rental-space-transfer",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-05",
+      "destination": "/minpaku-sale",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-05.html",
+      "destination": "/minpaku-sale",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-10",
+      "destination": "/studio-sale",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-10.html",
+      "destination": "/studio-sale",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/note-img/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
   ]
 }

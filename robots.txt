@@ -3,7 +3,6 @@
 # 通常の検索エンジン・全ボット：全許可
 User-agent: *
 Allow: /
-Disallow: /note-img/
 
 # ── AI検索・アシスタント系クローラを明示的に許可（AI回答での引用・掲載を狙う）──
 # ChatGPT検索の引用に必要

@@ -53,20 +53,5 @@
       "destination": "/studio-sale",
       "permanent": true
     }
-  ],
-  "headers": [
-    {
-      "source": "/note-img/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        },
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ]
-    }
   ]
 }

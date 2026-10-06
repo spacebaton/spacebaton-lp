@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://spacebaton.com/rental-space-transfer</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -104,15 +104,9 @@
   </url>
   <url>
     <loc>https://spacebaton.com/column</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://spacebaton.com/column-detail</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://spacebaton.com/column-detail-02</loc>
@@ -121,20 +115,8 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://spacebaton.com/column-detail-03</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://spacebaton.com/column-detail-04</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://spacebaton.com/column-detail-05</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -158,13 +140,7 @@
   </url>
   <url>
     <loc>https://spacebaton.com/column-detail-09</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://spacebaton.com/column-detail-10</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -176,7 +152,7 @@
   </url>
   <url>
     <loc>https://spacebaton.com/column-detail-12</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -212,13 +188,13 @@
   </url>
   <url>
     <loc>https://spacebaton.com/rental-space-ma</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://spacebaton.com/minpaku-sale</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -230,7 +206,7 @@
   </url>
   <url>
     <loc>https://spacebaton.com/studio-sale</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -52,6 +52,26 @@
       "source": "/column-detail-10.html",
       "destination": "/studio-sale",
       "permanent": true
+    },
+    {
+      "source": "/listing-detail-08",
+      "destination": "/listing-detail-10",
+      "permanent": true
+    },
+    {
+      "source": "/listing-detail-08.html",
+      "destination": "/listing-detail-10",
+      "permanent": true
+    },
+    {
+      "source": "/listing-detail-09",
+      "destination": "/listing-detail-10",
+      "permanent": true
+    },
+    {
+      "source": "/listing-detail-09.html",
+      "destination": "/listing-detail-10",
+      "permanent": true
     }
   ]
 }

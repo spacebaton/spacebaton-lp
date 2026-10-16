@@ -11,6 +11,12 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#084cb4" />
   <title>無料査定・ご相談（問い合わせ窓口）｜レンタルスペース・民泊の売却/購入｜SpaceBaton（スペースバトン）</title>
   <meta name="description" content="SpaceBaton（スペースバトン）の問い合わせ窓口。レンタルスペース・民泊・貸し会議室・スタジオを「売りたい」方の無料査定と、「買いたい」方の希望条件登録を受け付けています。登録・相談・査定は無料、費用は成約時のみ（完全成功報酬）。送信後は確認メールと30分の無料オンライン面談をご案内します。" />
   <link rel="canonical" href="https://spacebaton.com/contact" />
@@ -230,6 +236,7 @@
                 <div class="field"><label>譲渡希望価格（万円・任意）</label><input type="text" name="譲渡希望価格" placeholder="応相談でもOK"></div>
               </div>
               <div class="field"><label>ご状況・ひとこと（任意）</label><textarea name="ご状況・ひとこと" placeholder="売りたい理由、運営状況など、書ける範囲でOK"></textarea></div>
+              <div class="field"><label>SpaceBatonを知ったきっかけ（任意）</label><select name="きっかけ"><option value="">選択してください</option><option>Google・Yahoo!などの検索</option><option>ChatGPTなどのAIに相談</option><option>note</option><option>X（旧Twitter）</option><option>知人・取引先の紹介</option><option>その他</option></select></div>
               <label class="agree"><input type="checkbox" name="同意" value="同意" required><span><a href="/privacy" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します<span class="req">必須</span></span></label>
             </fieldset>
 
@@ -253,6 +260,7 @@
                 <div class="field"><label>気になる案件番号（任意）</label><input type="text" name="案件番号" id="listingField" placeholder="例）SB-2026-004"></div>
               </div>
               <div class="field"><label>ご要望・ひとこと（任意）</label><textarea name="ご要望・ひとこと" placeholder="ご予算感、運営経験、開業希望時期など、あれば"></textarea></div>
+              <div class="field"><label>SpaceBatonを知ったきっかけ（任意）</label><select name="きっかけ"><option value="">選択してください</option><option>Google・Yahoo!などの検索</option><option>ChatGPTなどのAIに相談</option><option>note</option><option>X（旧Twitter）</option><option>知人・取引先の紹介</option><option>その他</option></select></div>
               <label class="agree"><input type="checkbox" name="同意" value="同意" required><span><a href="/privacy" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します<span class="req">必須</span></span></label>
             </fieldset>
 
@@ -265,6 +273,7 @@
               </div>
               <div class="field"><label>電話番号</label><input type="tel" name="電話"></div>
               <div class="field"><label>ご相談内容<span class="req">必須</span></label><textarea name="ご相談内容" required placeholder="気になることを何でもどうぞ"></textarea></div>
+              <div class="field"><label>SpaceBatonを知ったきっかけ（任意）</label><select name="きっかけ"><option value="">選択してください</option><option>Google・Yahoo!などの検索</option><option>ChatGPTなどのAIに相談</option><option>note</option><option>X（旧Twitter）</option><option>知人・取引先の紹介</option><option>その他</option></select></div>
               <label class="agree"><input type="checkbox" name="同意" value="同意" required><span><a href="/privacy" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します<span class="req">必須</span></span></label>
             </fieldset>
 
@@ -392,7 +401,7 @@
         data.append('送信日時', new Date().toLocaleString('ja-JP'));
         data.append('_elapsed', String(Date.now()-loadTime));
         var done=function(){
-          try{ if(window.gtag){ var r=(document.getElementById('roleField')||{}).value||'unknown'; gtag('event','generate_lead',{form_role:r}); } }catch(e){}
+          try{ if(window.gtag){ var r=(document.getElementById('roleField')||{}).value||'unknown'; var src=(form.querySelector('fieldset:not([disabled]) [name="きっかけ"]')||{}).value||'(未回答)'; gtag('event','generate_lead',{form_role:r,lead_source:src}); } }catch(e){}
           form.style.display='none';
           document.getElementById('formSuccess').classList.add('show');
           document.getElementById('formSuccess').scrollIntoView({behavior:'smooth',block:'center'});
@@ -405,5 +414,6 @@
       });
     })();
   </script>
+  <script src="/track.js" defer></script>
 </body>
 </html>

@@ -164,11 +164,12 @@
           <option value="関西">関西（大阪・京都他）</option>
           <option value="その他">その他</option>
         </select>
-        <select class="filter-select" id="filterPrice">
-          <option value="">価格帯：すべて</option>
-          <option value="0-100">〜100万円</option>
-          <option value="100-300">100〜300万円</option>
-          <option value="300-99999">300万円以上</option>
+        <select class="filter-select" id="filterStatus">
+          <option value="">ステータス：すべて</option>
+          <option value="open">募集中</option>
+          <option value="negotiating">独占交渉中</option>
+          <option value="sold">成約</option>
+          <option value="transferred">譲渡完了</option>
         </select>
         <button class="filter-btn" id="filterBtn">この条件で検索</button>
         <button class="filter-reset" id="filterReset">リセット</button>
@@ -244,7 +245,7 @@
             <div class="card-body">
               <div style="margin-bottom:10px"><span class="st-badge" style="background:#d93025;color:#fff">譲渡完了</span> <span style="font-size:11px;font-weight:800;color:var(--muted);margin-left:4px">2026年9月 譲渡完了</span></div>
               <h3>東京・池袋｜パーティールーム</h3>
-              <dl><dt>成約価格</dt><dd style="font-size:15px">非公開</dd><dt>広さ</dt><dd style="font-size:15px">39㎡</dd></dl>
+              <dl><dt>成約価格</dt><dd style="font-size:15px">非公開</dd><dt>広さ</dt><dd style="font-size:15px">30㎡台</dd></dl>
               <p class="card-location" style="font-size:12px;color:var(--muted);font-weight:700;margin:4px 0 0">📍 東京都豊島区</p>
               <span class="card-link" style="display:block;margin-top:14px;text-align:right;color:var(--blue);font-weight:900;font-size:13px">詳細を見る →</span>
             </div>
@@ -256,7 +257,7 @@
             <div class="card-body">
               <div style="margin-bottom:10px"><span class="st-badge" style="background:#d93025;color:#fff">譲渡完了</span> <span style="font-size:11px;font-weight:800;color:var(--muted);margin-left:4px">譲渡完了</span></div>
               <h3>大阪・天満｜パーティールーム＋撮影スタジオ 2物件セット</h3>
-              <dl><dt>成約価格</dt><dd style="font-size:15px">非公開</dd><dt>広さ</dt><dd style="font-size:15px">各32㎡</dd></dl>
+              <dl><dt>成約価格</dt><dd style="font-size:15px">非公開</dd><dt>広さ</dt><dd style="font-size:15px">各30㎡台</dd></dl>
               <p class="card-location" style="font-size:12px;color:var(--muted);font-weight:700;margin:4px 0 0">📍 大阪府大阪市北区</p>
               <span class="card-link" style="display:block;margin-top:14px;text-align:right;color:var(--blue);font-weight:900;font-size:13px">詳細を見る →</span>
             </div>
@@ -268,7 +269,7 @@
             <div class="card-body">
               <div style="margin-bottom:10px"><span class="st-badge" style="background:#d93025;color:#fff">成約</span> <span style="font-size:11px;font-weight:800;color:var(--muted);margin-left:4px">掲載前に成約</span></div>
               <h3>東京・下北沢エリア｜時間貸しレンタルスペース</h3>
-              <dl><dt>成約価格</dt><dd style="font-size:15px">非公開</dd><dt>広さ</dt><dd style="font-size:15px">47㎡</dd></dl>
+              <dl><dt>成約価格</dt><dd style="font-size:15px">非公開</dd><dt>広さ</dt><dd style="font-size:15px">40㎡台</dd></dl>
               <p class="card-location" style="font-size:12px;color:var(--muted);font-weight:700;margin:4px 0 0">📍 東京都</p>
               <span class="card-link" style="display:block;margin-top:14px;text-align:right;color:var(--blue);font-weight:900;font-size:13px">詳細を見る →</span>
             </div>
@@ -326,15 +327,16 @@
       var grid=document.querySelector('.listings-grid');
       if(!grid)return;
       var cards=Array.prototype.slice.call(grid.querySelectorAll('.card-anchor'));
-      var typeSel=document.getElementById('filterType'),areaSel=document.getElementById('filterArea'),priceSel=document.getElementById('filterPrice'),sortSel=document.getElementById('sortSelect');
+      var typeSel=document.getElementById('filterType'),areaSel=document.getElementById('filterArea'),priceSel=document.getElementById('filterStatus'),sortSel=document.getElementById('sortSelect');
       var countEl=document.querySelector('.results-count strong');
+      // ?status=open などで絞り込んだ状態のリンクを作れる
+      try{var qs=new URLSearchParams(location.search).get('status');if(qs&&priceSel.querySelector('option[value="'+qs+'"]'))priceSel.value=qs;}catch(e){}
       function apply(){
         var t=typeSel.value,a=areaSel.value,p=priceSel.value,shown=0;
         cards.forEach(function(c){
           var okT=!t||c.dataset.type===t;
           var okA=!a||c.dataset.area===a;
-          var okP=true;
-          if(p){var r=p.split('-'),price=parseInt(c.dataset.price,10);okP=price>=+r[0]&&price<=+r[1];}
+          var okP=!p||c.dataset.status===p;
           var show=okT&&okA&&okP;
           c.style.display=show?'':'none';
           if(show)shown++;
@@ -353,6 +355,7 @@
       [typeSel,areaSel,priceSel].forEach(function(s){if(s)s.addEventListener('change',apply);});
       if(sortSel)sortSel.addEventListener('change',function(){sortCards();apply();});
       if(reset)reset.addEventListener('click',function(){typeSel.value='';areaSel.value='';priceSel.value='';if(sortSel)sortSel.value='new';sortCards();apply();});
+      if(priceSel.value)apply();
     })();
   </script>
   <script src="/track.js" defer></script>

@@ -19,7 +19,7 @@
 - [希望条件の登録（買いたい）](https://spacebaton.com/contact?role=buy)
 - [売却査定シミュレーター（無料・登録不要・1分）](https://spacebaton.com/simulator)
 - [無料PDF「売却準備チェックリスト」（全31項目）](https://spacebaton.com/checklist)
-- [売却案件一覧](https://spacebaton.com/listings)
+- [売却案件一覧](https://spacebaton.com/listings)（[募集中のみ](https://spacebaton.com/listings?status=open)／[譲渡完了](https://spacebaton.com/listings?status=transferred)）
 
 ## 主要ガイド（業態別・立場別）
 - [レンタルスペースのM&Aとは？仲介の選び方・費用・流れ](https://spacebaton.com/rental-space-ma)
@@ -28,6 +28,7 @@
 - [貸し会議室の売却・譲渡](https://spacebaton.com/meeting-room-sale)
 - [レンタルスタジオの売却・譲渡（撮影・ダンス・ヨガ）](https://spacebaton.com/studio-sale)
 - [買いたい方へ：レンタルスペースを買う・引き継ぐ完全ガイド](https://spacebaton.com/buy)
+- [レンタルスペースを売却する前に確認すべき8つのこと（契約・名義・予約サイト・レビュー引き継ぎ）](https://spacebaton.com/rental-space-sale-checklist)
 - [成約実績・進行中の事例](https://spacebaton.com/cases)
 - [運営者・会社概要](https://spacebaton.com/about)
 

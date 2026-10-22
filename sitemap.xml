@@ -169,46 +169,10 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://spacebaton.com/rental-space-sale-checklist</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://spacebaton.com/rental-space-sale-options</loc>
+    <loc>https://spacebaton.com/ma-guideline</loc>
     <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://spacebaton.com/minpaku-quit</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://spacebaton.com/rental-space-closing-cost</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://spacebaton.com/space-business-sale-tax</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://spacebaton.com/buy-rental-space-checkpoints</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://spacebaton.com/rental-space-payback</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://spacebaton.com/listing-detail-13</loc>
@@ -251,5 +215,47 @@
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://spacebaton.com/rental-space-sale-checklist</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://spacebaton.com/rental-space-sale-options</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://spacebaton.com/minpaku-quit</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://spacebaton.com/rental-space-closing-cost</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://spacebaton.com/space-business-sale-tax</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://spacebaton.com/buy-rental-space-checkpoints</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://spacebaton.com/rental-space-payback</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

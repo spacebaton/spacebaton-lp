@@ -86,6 +86,11 @@
     .case p strong{color:var(--text);font-weight:900}
     .case .points{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
     .case .points span{font-size:11.5px;font-weight:900;background:var(--light);border:1px solid var(--line);border-radius:999px;padding:6px 13px;color:#33415b}
+    .case dl.cs-steps{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;margin:12px 0 4px;padding:14px 16px;background:var(--light);border-radius:12px;font-size:13px;line-height:1.8}
+    .case dl.cs-steps dt{font-weight:900;color:var(--blue);white-space:nowrap}
+    .case dl.cs-steps dd{margin:0;color:#33415b;font-weight:600}
+    .cs-updated{font-size:12px;font-weight:800;color:var(--muted);text-align:right;margin:-6px 0 14px}
+    @media(max-width:640px){.case dl.cs-steps{grid-template-columns:1fr;gap:2px}.case dl.cs-steps dd{margin-bottom:8px}}
     .case .more{font-size:12.5px;font-weight:900;margin-top:12px}
     .case .more a{color:var(--blue)}
 
@@ -137,17 +142,24 @@
       <div class="cs-wrap">
 
         <div class="cs-stats">
-          <div class="st"><strong>3<small>件</small></strong><span>2026年の仲介での<br>成約・譲渡完了</span></div>
+          <div class="st"><strong>3<small>件</small></strong><span>お預かり案件の成約・譲渡完了<br>（2026年／このほか自社スペースの売却1件）</span></div>
           <div class="st"><strong>4〜12<small>件</small></strong><span>1案件あたりの<br>買い手からの問い合わせ数</span></div>
           <div class="st"><strong>数日</strong><span>掲載から最初の<br>問い合わせが入るまで</span></div>
         </div>
+
+        <p class="cs-updated">最終更新日：<time datetime="2026-10-22">2026年10月22日</time></p>
 
         <!-- 事例1：成約 -->
         <article class="case">
           <span class="badge done">成約</span>
           <h2>撮影・多目的スタジオ（東海エリア）｜掲載から数日で4件の問い合わせ→成約</h2>
           <p>運営者（VMK）自身が育てた自社スタジオを、実際にM&A市場へ出した案件。プロ撮影機材・什器込みで「初日から営業できる状態」をそのまま引き継げる点が評価されました。数字は月別の収支と資産目録で正直に開示。<strong>掲載から数日で4件の問い合わせ</strong>が入り、内見・交渉を経て成約しました。</p>
-          <p>成約後も、レビュー・お気に入りの引き継ぎ、約1ヶ月の運用サポート、買い手の資金調達（融資・補助金）に使える実績データの提供まで伴走しています。</p>
+          <p>成約後も、レビュー・お気に入りの引き継ぎ、約1ヶ月の運用サポート、買い手の事業計画に使える実績データの提供まで伴走しています。</p>
+          <dl class="cs-steps">
+            <dt>売却前の課題</dt><dd>機材・什器など引き継ぐものが多く、価格の根拠を買い手に正しく伝える資料が必要だった</dd>
+            <dt>行ったこと</dt><dd>月次収支の整理（開業前の経費を分離）、資産目録の作成、買い手候補への説明と内見、成約後の運営引き継ぎ</dd>
+            <dt>結果</dt><dd>掲載から数日で4件の問い合わせ。内見・交渉を経て成約（成約価格は非公開）</dd>
+          </dl>
           <div class="points"><span>機材・什器込み</span><span>無人運営</span><span>レビュー引き継ぎ</span><span>譲渡後サポート1ヶ月</span></div>
           <p class="more"><a href="/column-detail-11">▶ この売却の値付け・経緯は、コラム「売却相場と査定の実例」で詳しく公開しています</a></p>
         </article>
@@ -157,6 +169,11 @@
           <span class="badge done">譲渡完了</span>
           <h2>レンタルスペース 2物件セット（大阪市内）｜2物件まとめて次のオーナーへ</h2>
           <p>レンタルスペース2物件を、セットでお預かりした案件です。公開後に複数の買い手候補から問い合わせが入り、条件の調整を経て<strong>2物件まとめての譲渡が完了</strong>しました。</p>
+          <dl class="cs-steps">
+            <dt>売却前の課題</dt><dd>2物件を同時に引き継いでもらうため、収支の根拠と賃貸借の条件を、買い手が判断できる形にそろえる必要があった</dd>
+            <dt>行ったこと</dt><dd>月次の利益・家賃・損益分岐点を案件資料に整理、貸主の譲渡承諾を先に確認、2物件をまとめて運営するメリット（清掃・備品管理の共通化）を買い手に提示</dd>
+            <dt>結果</dt><dd>複数の買い手候補から問い合わせ。条件調整を経て2物件まとめて譲渡完了（価格は非公開）</dd>
+          </dl>
           <div class="points"><span>2物件セット</span><span>レンタルスペース</span><span>関西</span></div>
         </article>
 

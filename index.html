@@ -124,6 +124,16 @@
     .faq-item[open] .faq-q::after{transform:rotate(45deg)}
     .faq-item[open] .faq-q{border-bottom:1px solid var(--line);color:var(--blue)}
     .faq-a{padding:16px 22px;font-size:13px;line-height:1.9;color:#3a4a62;font-weight:500}
+    .fit{display:grid;grid-template-columns:1.25fr 1fr;gap:18px;max-width:1040px;margin:0 auto}
+    .fit-box{background:#fff;border:1px solid #dfe8f6;border-radius:14px;padding:24px 26px;box-shadow:0 6px 15px rgba(12,40,90,.06)}
+    .fit-box h3{font-size:16px;margin:0 0 12px;font-weight:900}
+    .fit-box.yes h3{color:var(--blue)}
+    .fit-box ul{margin:0;padding:0;list-style:none}
+    .fit-box li{position:relative;padding:0 0 0 26px;margin:0 0 10px;font-size:13.5px;line-height:1.8;font-weight:700;color:#33415b}
+    .fit-box.yes li:before{content:"✓";position:absolute;left:0;top:0;color:var(--blue);font-weight:900}
+    .fit-box.alt li:before{content:"→";position:absolute;left:0;top:0;color:#8a96ab;font-weight:900}
+    .fit-box .fit-link{display:inline-block;margin-top:6px;color:var(--blue);font-weight:900;font-size:13px}
+    @media(max-width:900px){.fit{grid-template-columns:1fr}.fit-box{padding:20px 18px}}
   </style>
   <script type="application/ld+json">
   {
@@ -206,6 +216,7 @@
         "@type": "FAQPage",
         "@id": "https://spacebaton.com/#faq",
         "mainEntity": [
+          { "@type": "Question", "name": "レンタルスペースを売りたいとき、どこに相談すればいいですか？", "acceptedAnswer": { "@type": "Answer", "text": "売り方によって相談先が変わります。自分で買い手と交渉できるならM&Aマッチングサイトへの自己掲載、すでに買い手がいるなら直接の譲渡（契約書は専門家に確認）、賃貸借契約や予約サイトの引き継ぎまで相談しながら進めたいならSpaceBatonのような業態特化型の仲介が向いています。売却先ごとの違いは「売却先6つの選択肢の比較」で詳しく解説しています。" } },
           { "@type": "Question", "name": "登録・相談は本当に無料ですか？", "acceptedAnswer": { "@type": "Answer", "text": "はい、完全無料です。売り手・買い手ともに、登録・掲載・相談・マッチングまですべて費用はかかりません。手数料は売買が成立した場合のみ発生します。" } },
           { "@type": "Question", "name": "手数料はいくらですか？", "acceptedAnswer": { "@type": "Answer", "text": "売り手・買い手それぞれ、成約金額の10%（最低10万円）をいただいています。成功報酬制のため、成約しなかった場合は一切費用は発生しません。" } },
           { "@type": "Question", "name": "売却価格はどうやって決まりますか？", "acceptedAnswer": { "@type": "Answer", "text": "目安は「補正した年間利益（EBITDA）×2〜3倍＋設備・什器の時価」です。立地・稼働率・設備・運営の仕組み化など複数の要素を加味して算出し、初回のヒアリング後に簡易査定をお伝えします。登録不要の査定シミュレーターで概算も確認できます。" } },
@@ -300,6 +311,33 @@
           <article><i>10%</i><h3>明確な料金体系</h3><p>売り手・買い手各10%（最低10万円）の安心価格。</p></article>
           <article><i class="ic-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 19v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1"/><circle cx="9" cy="7" r="3"/><path d="M22 19v-1a4 4 0 0 0-3-3.87"/><path d="M16 4.13a4 4 0 0 1 0 7.75"/></svg></i><h3>スペース特化の専門性</h3><p>実績ある運営者だからできる的確なマッチングをサポート。</p></article>
           <article><i class="ic-svg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 3v6c0 4.4-3 8-7 9-4-1-7-4.6-7-9V5z"/><path d="M9 12l2 2 4-4"/></svg></i><h3>安心・安全の取引</h3><p>秘密保持を徹底し、安心してご利用いただけるようサポートします。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="fit">
+      <div class="container">
+        <div class="section-title"><span>FOR WHOM</span><h2>SpaceBatonが向いている方</h2><p>売り方はひとつではありません。ご自身に合う方法を選んでください。</p></div>
+        <div class="fit">
+          <div class="fit-box yes">
+            <h3>こんなオーナーには、SpaceBatonをおすすめします</h3>
+            <ul>
+              <li>賃貸物件で運営していて、貸主の承諾や賃貸借契約の引き継ぎに不安がある</li>
+              <li>予約サイトのアカウント・レビュー、家具・設備、運営の仕組みまで含めて、何を引き継げるかを整理したい</li>
+              <li>屋号や場所を伏せて、条件に合う買い手候補にだけ非公開で打診したい</li>
+              <li>査定・買い手との交渉・契約・引き渡し後の引き継ぎまで、ひとりで進めるのは不安</li>
+              <li>1室だけの小さなスペースや、利益が薄いスペースでも相談したい</li>
+            </ul>
+          </div>
+          <div class="fit-box alt">
+            <h3>ほかの方法が合う場合もあります</h3>
+            <ul>
+              <li>自分で買い手と交渉でき、売り手側の手数料をできるだけ抑えたい → M&Aマッチングサイトへの自己掲載</li>
+              <li>すでに買い手が決まっている → 直接の譲渡（契約書だけ専門家に確認）</li>
+              <li>複数拠点を会社ごと売る、売却額が数千万円以上になる → 総合型のM&A仲介会社や専門家</li>
+            </ul>
+            <a class="fit-link" href="/rental-space-sale-options">売却先6つの選択肢を比較する →</a>
+          </div>
         </div>
       </div>
     </section>
@@ -401,6 +439,10 @@
       <div class="container">
         <div class="section-title"><span>FAQ</span><h2>よくある質問</h2><p>ご不明な点はお気軽にお問い合わせください</p></div>
         <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-q">レンタルスペースを売りたいとき、どこに相談すればいいですか？</summary>
+            <div class="faq-a">売り方によって相談先が変わります。自分で買い手と交渉できるならM&Aマッチングサイトへの自己掲載、すでに買い手がいるなら直接の譲渡（契約書は専門家に確認）、賃貸借契約や予約サイトの引き継ぎまで相談しながら進めたいならSpaceBatonのような業態特化型の仲介が向いています。売却先ごとの違いは<a href="/rental-space-sale-options" style="color:var(--blue);font-weight:900">売却先6つの選択肢の比較</a>で詳しく解説しています。</div>
+          </details>
           <details class="faq-item">
             <summary class="faq-q">登録・相談は本当に無料ですか？</summary>
             <div class="faq-a">はい、完全無料です。売り手・買い手ともに、登録・掲載・相談・マッチングまですべて費用はかかりません。手数料は売買が成立した場合のみ発生します。</div>

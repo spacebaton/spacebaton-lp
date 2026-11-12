@@ -217,6 +217,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://spacebaton.com/listing-detail-15</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://spacebaton.com/listing-detail-14</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
